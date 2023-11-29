@@ -1,0 +1,635 @@
+Python 3.12.0
+*Python:
+
+
+°Lançada por Guido Van Rossum em 1991.
+°Uma das linguagens mais utilizadas no mundo.
+°Linguagem simples e prática. 
+°Fonte livre e aberta.
+°Suportado pelo Windows, Linux, Macintosh, Solaris
+°Alto nível para várias aplicações:Desenvolvimento Web, Ciência de dados, Inteligência Artificial e Computação Gráfica.
+
+
+Ambiente de Desenvolvimento Integrado (IDE):
+°Pycharm
+°Spyder
+°Atom IDE
+°Visual Studio Code
+°PyDev
+°Komodo Edit
+°Geany
+°Pyzo
+
+
+Ambiente de desenvolvimento interativo baseado na Web:
+
+°Jupyter Notebook
+°Jupyter Lab
+-Arquivos no desktop.
+-Dependente da capacidade de processamento do computador.
+-Necessita instalação.
+
+
+Anaconda (python):
+Plataforma de distribuição para ciência de dados com python.
+Simplifica o gerenciamento e implantação de pacotes.
+
+
+NumPy ---> Computação matemática com Python.
+Pandas ---> Manipulação e análise de dados. Trabalha em conjunto com Numpy.
+Scikit learn ---> Aprendizado de máquina (machine learning) em python.
+Matplotlib ---> Criação de gráficos e visualização de dados em geral.
+Seaborn ---> Visualização de dados baseado no matplotlib.
+Fornece interface de alto nível para desenhar graficos estatísticos atraentes e informativos.
+plotly ---> Criação de gráficos e visualização de dados de forma interativa, com interface de alto nível.
+TensorFlow ---> Biblioteca de código aberto. Desenvolvido pela Google Brain Team para aprendizado de máquina e pesquisa de redes neurais profundas.
+Keras deep learning library ---> biblioteca rede neural de código aberto. roda em cima do tensor TensorFlow
+SciPy ---> É uma biblioteca baseado em Python, de código aberto, para matemática, ciências e engenharia.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Inicio do fim:
+
+print("Hello world")
+O codigo print e usado para tudo desde de imprimir variaveis até um hello world.
+
+
+Para adicionar um comentario em uma linha basta adicionar um "#" no começo do comentario e no final Ex: #print("Hello world") / # first code 
+mas se for mais de uma linha utiliza-se (''') para iniciar e (''')para finalizar.
+(Sempre é bom usar os comentarios para deixar o codigo mais legivel e para se localizar nele tambem.)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Tipos de dados:
+
+Entender os tipos de dados no python e fundamental, pois você precisa explicar para ele o que é texto o que é numero é dentro de numero tem duas variacoes 
+se ele e inteiro ou se e fracao e valores verdadeiros ou falsos.
+
+texto=(string/str): quando se coloca aspas simples ('') ou aspas duplas ("") o python interpreta como texto
+
+
+numeros(number): Existe dois tipos de numeros os:
+integer(inteiro) = {1,2,3,4...} ou qualquer numero que não tenha fracao o python entende como inteiro
+float(fracao) = {3.5, 4.7, 5.8 ...}
+
+E tem o BOOLEAN type que e verdadeiro ou falso 
+
+
+Para descobrir o tipos de dados no codigo você pode usar o 
+print(type("sua variavel"))
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Variaveis: 
+variaveis são containers usado para amarzenar dados podendo ser number, integer, float, string/str, ou BOOLEAN.
+você pode declarar variaveis no python dando um nome a elas tipo x = 2 depois no seu codigo você coloca essa variavel onde você precisar
+
+No codigo seria assim;
+
+mustang = 2 
+viaLactea = 'hello world'
+
+Nisso você manda imprimir:
+
+print(mustang) = 2
+print(viaLactea) = hello world   
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Modificação de dados:
+
+mustang = str(2) 
+viaLactea = int(5)
+ferrari = float(6)
+
+
+print(mustang)      2
+print(viaLactea)    5
+print(ferrari)      6.0 Nesse converteu de um numero inteiro para uma fracao ou float
+
+Somando as mesmas variaveis fica mais explicito
+
+mustang = str(2) 
+viaLactea = int(5)
+ferrari = float(6)
+
+
+print(mustang + mustang )       22 Nesse como se ele adicionasse outro texto 3 pois ele está como string/str
+print(viaLactea + viaLactea)    10 Nesse uma soma normar 5 + 5 = 10
+print(ferrari + ferrari)        12.0 Nesse a mesma soma so que fracionada 6.0 + 6.0 = 12.0
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*Texte de fixação:
+
+'''         
+Criar uma frase adicionar variaveis e imprimir no final.
+
+Frase = (crie a sua)
+'''
+EX:
+local = 'oficina'
+peca = 'pistão'
+litros = str(6.2)
+ano = 1970
+ano = str(ano)
+veiculo = 'camaro'
+cidade = 'São Paulo'
+
+print('Na ' + local + ' não tinha o ' + peca + ' para o ' + veiculo, litros + ' de ' + ano + ' tive que procurar em ' + cidade )
+
+Na oficina não tinha o pistão para o camaro 6.2 de 1970 tive que procurar em São Paulo
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Input: O input e a interação do usuario com seu programa, você pega a informação do usuario
+e utiliza ela dentro do seu codigo para aumentar a interação com usuario
+
+Ex:
+
+nome = 'Andre'
+idade = 32
+idade = str(idade)
+cidade = 'São Paulo'
+
+print('O ' + nome + ' tem ' + idade + ' anos de idade e mora em ' + cidade + '.' )
+
+Muda para isso:
+
+nome = input("Qual seu nome: ")
+idade = input('Qual sua idade: ')
+idade = str(idade)
+cidade = input ("Qual sua cidade: ")
+
+print('O ' + nome + ' tem ' + idade + ' anos de idade e mora em ' + cidade + '.' )
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fixação: 
+Cálculo de idade:
+
+ano_de_nacimento = int(input('Qual ano você nasceu ? '))
+ano_atual = int(input('Qual ano você esta ?'))
+calculo = ano_de_nacimento - ano_atual
+
+
+print(f'Sua idade é: {calculo} anos')
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Slice: você vai utilizar o Slice para tirar a informação da string, integer, ou de um float 
+sem ter a informação completa.
+
+index; a ordem numerica das letras ou seja  PYTHON  o P = 0, Y = 1, T = 2, H = 3, O = 4, N = 5.
+Ele começa a contar do 0 para frente ou seja a primeira possição e a 0.
+
+
+fruta = 'Abacaxi'
+#index   0123456
+
+print(fruta[5])
+
+Nesse caso ele me retorna o "x"
+
+Se você quiser puxar da letra 2 ate a 4
+fruta = 'Abacaxi'
+#index   0123456
+
+print(fruta[2:4]) 
+
+O problema que vai ficar sempre uma letra antes no final sendo "ac" o retorno sempre mostrando 
+um antes do final se você quer a letra "a" tambem você coloca [2:5].
+Pode pular um numero tambem colocando [2:7] aí fica acaxi.
+Se colocar valores negativos ele conta de trás para frente.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilizando Formated string: Facilita a leitura da string e a inserção de variaveis dentro da string
+
+nome = 'Ghost'
+sobrenome = 'Of HUe'
+profissao = 'programador'
+
+texto = f'O {nome} {sobrenome} e um exelente {profissao}'          #texto formated string
+texto2 = 'O ' + nome +' ' +  sobrenome  + ' e um exelente ' + profissao  #texto normal
+
+print(texto)
+print(texto2)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Metodos para string: Metodo para alterar texto, encontrar texto, ou modificar texto dentro de uma string.
+
+Dentro dos Metodos para string você pode decidir como vai salvar o tipo de dado podendo colocar
+ele somente em letras maiúsculas ou minusculas sem pedir para o usuario.
+Existem vários métodos disponíveis para manipulação de strings em Python. 
+Estão alguns dos métodos mais comuns:
+
+1º capitalize()
+
+Converte o primeiro caractere para maiúscula.
+
+string = "hello world"
+    resultado = string.capitalize()
+# Resultado: "Hello world"
+
+2º upper()
+
+Converte todos os caracteres para maiúscula.
+
+string = "hello world"
+resultado = string.upper()
+# Resultado: "HELLO WORLD"
+
+3º lower()
+
+Converte todos os caracteres para minúscula.
+
+string = "HELLO WORLD"
+    resultado = string.lower()
+# Resultado: "hello world"
+
+4º title()
+
+Converte o primeiro caractere de cada palavra para maiúscula.
+
+string = "hello world"
+    resultado = string.title()
+# Resultado: "Hello World"
+
+5º len()
+
+Retorna o comprimento da string (número de caracteres).
+
+string = "hello world"
+    resultado = len(string)
+# Resultado: 11
+
+6º count(substring)
+
+Conta o número de ocorrências de uma substring na string.
+
+string = "hello world"
+    resultado = string.count("l")
+# Resultado: 3
+
+7º find(substring)
+
+Retorna o índice da primeira ocorrência de uma substring. Retorna -1 se a substring não for encontrada.
+
+string = "hello world"
+    resultado = string.find("lo")
+# Resultado: 3
+
+8º replace(old, new)
+
+Substitui todas as ocorrências de uma substring por outra.
+
+string = "hello world"
+    resultado = string.replace("hello", "hi")
+# Resultado: "hi world"
+
+9º startswith(prefix) e endswith(suffix)
+
+Verifica se a string começa ou termina com a substring fornecida, respectivamente.
+
+string = "hello world"
+    resultado_start = string.startswith("hello")
+# Resultado_start: True
+    resultado_end = string.endswith("world")
+# Resultado_end: True
+
+10º strip()
+
+Remove espaços em branco no início e no final da string.
+
+string = "   hello world   "
+    resultado = string.strip()
+# Resultado: "hello world"
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Operações matemáticas:
+
+Operações matemática em python e a mesma coisa que na escola * /
+Mutiplicação e divisão vem sempre antes da adição e subtração + -
+Se estiver dentro de parenteses tem uma preferencia ()
+Valores exponenciais ** (2³)
+então a ordem e (2+2) -->  5**6 -->  5 * 9  ou  9 / 2 --> 5+5 ou 5-5  
+
+
+
+Operadores de comparação: pode ser usado em numero palavras mas se for
+Python == python e false pois tem diferença entre maiúscula e minusculas
+
+== igual
+!= não igual
+> maior que
+< menor que
+>= maior ou igual
+<= menor ou igual
+
+operador1 = 10 == 10
+operador2 = 20 != 20
+operador3 = 30 > 20
+operador4 = 40 < 50
+operador5 = 50 >= 40
+operador6 = 60 <= 70
+
+print(operador1, operador2, operador3, operador4, operador5, operador6)
+
+resultado:True False True True True True
+
+
+
+Operadores de Atribuição: 
+Uma forma de realizar codigos matematicos com codigos mais simples 
+
+x = 10
+#x = x + 5
+#x += 5
+#x -= 5
+#x *= 5
+#x /= 5
+#x **=5
+x %= 3
+
+
+print(x)
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Operadores de fluxo: 
+
+If, Else or Elif
+velocidade_via = 120
+sua_velocidade = int(input("Qual sua velocidade ?"))
+
+
+
+if sua_velocidade > 120: 
+    print('A velocidade do radar é 120 reduza')
+
+elif sua_velocidade < 110:
+    print("Sai da frente krl")
+
+else: 
+    print('Está no limite')
+-------------------------------------------------------------------------------------------------------------------------------
+
+Operadores Lógicos:
+And ou or
+
+
+
+renda_acima_5mil = True
+nome_limpo = True
+
+
+if renda_acima_5mil and nome_limpo:
+    print('Financiamento aprovado')
+
+else:
+    print('Financiamento negado')
+
+    resultado:Financiamento aprovado
+
+
+    
+renda_acima_5mil = True
+nome_limpo = False
+
+
+if renda_acima_5mil or nome_limpo:
+    print('Financiamento aprovado')
+
+else:
+    print('Financiamento negado')
+
+        resultado:Financiamento aprovado
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Multiplos Operadores de Comparação:
+Maneira mais simples de escrever um codigo
+
+valor = 60
+
+if 20 <= valor <40:
+     print('produto aceito')
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+For Loops:
+Você pode utilizar em todas as partes do seu codigo quando você precisar de um loop/algo que fica repetindo dentro de si mesmo
+ou de uma variavel. Pode ser usado com números, string, If e Else, Nested loop, separando string.
+
+
+************************
+#for loop Numeros
+
+for infinity in range(0, 21, 5):
+        print(infinity)
+'''range = quantidade de vezes que vai rodar dentro de si mesmo
+mas sempre lembrar que o python começa a contar do 0 então se você 
+colocar 5 vai ser 0 1 2 3 4. 
+tem o step que é (0, 21, 2)
+0 = onde começa 21 = onde acaba 2 = quantas casas pula
+'''
+
+
+
+***********************
+#for loop para string
+
+
+for sopa_de_letrinhas in 'Paparelepipedo':
+    print(sopa_de_letrinhas)
+
+'''
+    Você pode associar sua palavra a uma variavel e em vez de escrever só coloca o nome da 
+    variavel.
+
+palavra = Paparelepipedo  
+
+for sopa_de_letrinhas in palavra:
+    print(sopa_de_letrinhas)
+ 
+palavra = Paparelepipedo  
+
+for sopa_de_letrinhas in palavra:
+    print(sopa_de_letrinhas + 'Está dentro da palavra Paparelepipedo')
+
+    Caso você queira adicionar um numero vai dar erro então você terá que criar modificações
+
+
+    print(f'{sopa_de_letrinhas} Está dentro da palavra {palavra}')
+    Se voce coolocar as variaveis em vez da palavar depois só mudar a variavel.
+
+*****************************
+
+# For loop com If e Else
+
+compra_confirmada = True
+dados_compra = 'compra no valor de 2.500'
+
+
+for enviar in range(3):         
+    if compra_confirmada:
+         print(dados_compra)
+         print('compra realizada')
+         break
+
+else:
+     compra_confirmada = False
+     print("Falhou ou tá dando golpe?")
+'''
+No caso if e else você coloca o if dentro do for se ele for verdade ele 
+para de rodar e envia os dados
+mas se for mentira ele pula para o else
+'''
+
+*************************************
+
+Nested Loops: E basicamente um loop dentro de outro loop 
+
+
+# == for loop nested ===
+
+        # Outer loop = Loop de fora
+        # Inner loop = Loop de dentro
+
+for number1 in range(5):
+    print(number1)  #loop normal que imprime de 0 á 4
+    for number2 in range(5): #esse loop roda dentro do primeiro loop
+        print(number2)
+
+''' 
+com o loop de dentro ele e confuso mas da para entender pois fica assim:
+
+0 Esse 0 e do primeiro loop (Esse e o primeiro loop do Number1)
+0 Esse e 0 e do segundo loop (Esse e o primeiro loop do Number2)
+1 Esse e 1 e do segundo loop (Esse e o segundo  loop do Number2)
+2 Esse e 2 e do segundo loop (Esse e o terceiro loop do Number2)
+3 Esse e 3 e do segundo loop  (Esse e o quarto loop do Number2)
+4 Esse e 4 e do segundo loop  (Esse e o quinto loop do Number2)
+1 Esse e 1 e do primeiro loop  (Esse e o segundo loop do Number1)
+Assim em diante
+
+'''
+
+Pode fazer assim tambem
+
+for number1 in range(1, 6):
+    print('produto ' + str(number1))  #loop normal que imprime de 0 á 4
+    for number2 in range(5): #esse loop roda dentro do primeiro loop
+        print(number1, number2)
+
+********************************************
+
+For Loop Separando String
+
+
+# Vai ser utilizado o Nested loop 
+
+
+#Modificar dojão americano para d o j ã o a m e r i c a n o
+
+palavra = 'dojão americano'
+
+for need in palavra:
+    print(f' {need}', end='')# se o espaço em end='' for vazio e vai voltar sem descer uma linha
+
+# quando escreve print(f'') o e a string formatada
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+    Criando Retangulo "Com for loop":
+
+    Codigo:
+
+linhas = 6
+colunas = 6
+simbulo = "@"
+
+for L in range(linhas):
+    for C in range(colunas):
+        print(simbulo, end='')
+    print()
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+While Loop: Ele e um pouco diferente do for loop 
+Loop dependente de uma condição ou seja tu vai vender um item você pagou 20 e vende a 200
+mas vai fazer uma promoção que a cada dia abaixa 5 no valor mas não pode vender abaixo de 20.
+******************
+valor = 200
+dia = 0
+
+
+while valor > 20:
+    dia += 1
+    print (f' No dia {dia} o produto vai ser vendido por R${valor}')
+    valor -= 5
+
+Resultado:No dia 36 o produto vai ser vendido por R$25
+******************
+
+Quando tem um condição ele e uma exelente alternativa.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Operador Ternário: Uma forma de economizar uma quantidade significativa de linhas no seu codigo
+
+
+Sai disso 
+
+'''
+idade = int(input('Qual sua idade ?'))
+
+if  idade >= 16:
+    print('Pode votar!')
+elif idade <= 15:
+    print('Não pode votar')
+'''
+
+para
+idade = int(input('Qual sua idade ?'))
+resultado = 'Pode votar!' if idade >= 16  else 'Não pode votar'
+
+print(resultado)
+***********************************************************************************************************
+v = int(input('Qual valor do produto:'))
+
+while v > 20:
+    v = (v * 0.10) + v 
+    print(f'O valor final do seu produto será de R$ {v}')
+    break
+
+Python While Loop é usado para executar um bloco de instruções 
+repetidamente até que uma determinada condição seja satisfeita. 
+E quando a condição se torna falsa, a linha imediatamente após o loop no programa é 
+executada. O loop while cai na categoria de iteração indefinida . Iteração indefinida 
+significa que o número de vezes que o loop é executado não é especificado explicitamente 
+com antecedência.
+
+
+As instruções representam todas as instruções recuadas pelo 
+mesmo número de espaços de caracteres depois que uma construção de programação 
+é considerada parte de um único bloco de código. Python usa endentação como seu método
+de agrupamento de declarações. Quando um loop while é executado, expr é avaliado primeiro 
+em um contexto booleano e, se for verdadeiro, o corpo do loop é executado. Em seguida, a 
+expr é verificada novamente, se ainda for verdadeira, o corpo é executado novamente e 
+continua até que a expressão se torne falsa.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Diferenças Entre ForLoop e While Loop e If Else:
+
+If e Else: sempre executa UMA vez e quando e VERDADEIRO(TRUE) e não roda novamente.
+(VERDADEIRO ou Falso)
+
+For Loop: você tem que falar para essa variavel roda tantas vezes.
+(Ele vai ser utilizado quando você não sabe o tamanho do seu loop.)
+
+While Loop: para esse variavel se for isso ou aquilo gire X vezes.
+(Esse e usado quando você sabe o tamanho do loop)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
