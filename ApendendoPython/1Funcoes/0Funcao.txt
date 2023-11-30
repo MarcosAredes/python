@@ -197,3 +197,41 @@ Esse retorna um valor que fica armazenado
 
 *************************************************************************
 
+Vários argumentos xargs com números:
+
+****************************************
+
+def soma(*numeros):
+    resultado = 0
+    for num in numeros:
+        resultado += num
+    return resultado
+
+x = soma(2, 3, 4, 7)
+print(x)
+
+*****************************************
+
+Vários argumentos xargs nomeando parametros:
+
+def agencia(**carro):
+    return carro
+
+
+print(agencia(modelo=' Gol' ,cor=' Branco' , motor= 2.0))
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Importando Modulos:
+
+E Basicamente importar Biblioteca
+
+*********************************
+
+import math
+
+print(math.factorial(4))
+
+**********************************
+
+E você pesquisa se tem a Biblioteca que você precisa e vê como funciona.
