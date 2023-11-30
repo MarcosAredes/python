@@ -1,0 +1,45 @@
+Em Python, funções são blocos de código reutilizáveis que realizam 
+uma tarefa específica. Elas ajudam a organizar o código, facilitando 
+a leitura, manutenção e reutilização. 
+
+Função --> Modulo --> Package --> library
+(item) -->(sessão) --> (especialidade) --> (Biblioteca)
+(Maça) -->(Frutas) --> (Sacolão)  --> -->  (Supermercado)  
+
+-----------------------------------------------------------------------------------
+
+Função
+
+Como funciona uma Função: Função foi feita para que você não fique se repitindo,
+Ex: se você escrever um código você não precisa ficar copiando e colando, você da um nome
+para função/grupo de códigos depois chama ele lá em baixo sem digitar tudo de novo.
+
+    
+def lojinha():
+    print('Olá Mustang !')
+    print('Temos 5 notebooks em estoque')
+
+lojinha()
+
+#Tanto de código
+#Tanto de código
+#Tanto de código
+#Tanto de código
+#Tanto de código
+#Tanto de código
+
+lojinha()
+
+'''
+Resultado:
+Olá Mustang !
+Temos 5 notebooks em estoque
+Olá Mustang !
+Temos 5 notebooks em estoque
+'''
+
+------------------------------------------------------------------------------------------------------------
+
+Criando função de soma:
+
+Code;
