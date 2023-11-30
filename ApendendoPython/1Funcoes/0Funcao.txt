@@ -13,6 +13,7 @@ Função
 Como funciona uma Função: Função foi feita para que você não fique se repitindo,
 Ex: se você escrever um código você não precisa ficar copiando e colando, você da um nome
 para função/grupo de códigos depois chama ele lá em baixo sem digitar tudo de novo.
+para se chamar uma função se chama com "def"
 
     
 def lojinha():
@@ -40,6 +41,47 @@ Temos 5 notebooks em estoque
 
 ------------------------------------------------------------------------------------------------------------
 
+Variaveis dentro de funções: 
+Variaveis e funções funcionam de formas diferentes de uma maneira boa
+
 Criando função de soma:
 
 Code;
+***************************************
+
+def somar_divida():
+    numero1 = 20
+    numero2 = 50
+    resultado = numero1 + numero2
+    print(resultado)
+
+somar_divida()
+
+***************************************
+
+Var = Variaveis
+Var que está fora da função são chamadas de variaveis globais.
+Var que está dentro da função e variaveis que pertence aquela função não pertencendo a parte global do código.
+Sendo por isso que você consegue utilizar as mesmas variaveis sem problema nenhum:
+
+*******************************************
+
+def somar_divida():
+    numero1 = 20
+    numero2 = 50
+    resultado = numero1 + numero2
+    print(resultado)
+
+somar_divida()
+
+def somar_divida1():
+    numero1 = 20
+    numero2 = 50
+    resultado = numero1 + numero2
+    print(resultado)
+
+somar_divida()
+
+***********************************************
+
+Usando as mesmas variaveis sem erro no codigo.
