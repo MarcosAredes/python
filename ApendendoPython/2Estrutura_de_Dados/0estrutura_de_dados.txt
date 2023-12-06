@@ -1,1 +1,16 @@
 Introdução a lista:
+
+Toda lista ela vai começar e finalizar com [] dentro da lista se chama 
+itens, que ficam dentro de alguma variável.
+
+Pra que serve: Armazenar mais de uma informação em variáveis e manter
+a sequencia dos dados em uma variável.
+
+******************************************
+car = ['Impala', 'Camaro', 'Mustang', 911]
+
+print(car)
+*********************************************
+
+
+Manipulando listas:
