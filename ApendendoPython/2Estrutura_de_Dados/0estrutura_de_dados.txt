@@ -96,3 +96,118 @@ car.remove('Impala')
 print(car)
 
 ****************************************************************
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Concatenando listas:
+
+Colocar duas listas juntas, multiplicar listas, colocar uma dentro da outra.
+
+Multiplicando a lista:
+
+******************************************
+
+numbers = [1, 2, 3, 4, 5]
+
+final = numbers * 2
+print(final)
+
+********************************************
+
+Juntar duas listas:
+
+*********************************************
+
+numbers = [1, 2, 3, 4, 5]
+letras = ['a' , 'b' , 'c' , 'd' , 'e']
+
+final = numbers + letras
+print(final)
+
+
+numbers = [1, 2, 3, 4, 5]
+letras = ['a' , 'b' , 'c' , 'd' , 'e']
+
+numbers.extend(letras)
+print(numbers)
+
+*********************************************
+
+Crindo listas dentro de listas:
+
+**********************************************
+
+itens = [['item1' , 'item2'] , ['item3' , 'item4']]
+#                 0                     1
+#            0          1          0          1
+print(itens[0] [1])
+
+ nesse caso iria imprimir o 'item2'
+
+Pois dentro da lista tem duas sub-lista que contem as ordens corretas.
+
+itens = [['item1' , 'item2'] , ['item3' , 'item4']]
+#                 0                     1
+#            0          1          0          1
+print(itens[1] [1])
+
+    nesse caso iria imprimir o 'item4'
+
+*********************************************************
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Extraindo variáveis de listas:
+
+Primeiro você define sua lista do jeito que você quiser depois você define uma variável para
+algum item da lista. 
+
+Ex:
+*********************************************
+
+produtos = ['a', 'b', 'c', 'd']
+
+item0 = produtos[0]
+item1 = produtos[1]
+item2 = produtos[2]
+item3 = produtos[3]
+
+print (item0)
+print (item1)
+print (item2)
+print (item3)
+
+**********************************************
+
+Reduzindo o tamanho do codigo;
+
+produtos = ['a', 'b', 'c', 'd']
+
+item0 , item1 , item2 , item3 = produtos
+
+print (item0)
+print (item1)
+print (item2)
+print (item3)
+
+************************************************
+
+O problema e se você não quiser puxar todos os itens da erro 
+para corrigir e bem simples
+
+item0 , item1 , item2 , item3 = produtos ---> erro
+item0 , item1 , item2 , *itens = produtos ---> o codigo roda com você podendo acresentar itens na lista
+
+produtos = ['a', 'b', 'c', 'd']
+
+item0 , item1 , item2 , *itens = produtos
+
+print (item0)
+print (item1)
+print (item2)
+print (itens)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+looping dentro de lista:
+
