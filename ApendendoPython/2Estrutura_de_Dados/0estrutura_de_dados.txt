@@ -285,4 +285,13 @@ print(fruit_list)
 
 ***********************************************
 
-Tuple
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Tuples
+
+Tudo e uma lista mas a forma que é escrito e diferente e como e amarzenado na memoria também
+e que não podem ser alteradas a diferença e quando se deve usar  e que uma tuple se abre e fecha
+com (), você faz basicamente tudo que se faz com uma lista
+
+****************************************************
+
