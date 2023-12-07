@@ -239,5 +239,30 @@ else:
 
 -----------------------------------------------------------------
 
+Agregando Duas listas com Zip
+
+Basicamente você tem duas listas não vai juntar as duas lista como se 
+em vez disso
+
+************************************************
+numbers = [1, 2, 3, 4, 5]
+letras = ['a' , 'b' , 'c' , 'd' , 'e']
+
+final = numbers + letras
+print(final)
+
+que o resultado é: [1, 2, 3, 4, 5, 'a', 'b', 'c', 'd', 'e']
+
+************************************************************
+
+vai ser assim
+
+cor = ['amarelo', 'preto', 'azul', 'roxo']
+valor = [10 , 20 , 30, 40]
 
 
+two_list = zip(cor, valor)
+
+print(list(two_list))
+
+resultado:[('amarelo', 10), ('preto', 20), ('azul', 30), ('roxo', 40)]
