@@ -266,3 +266,23 @@ two_list = zip(cor, valor)
 print(list(two_list))
 
 resultado:[('amarelo', 10), ('preto', 20), ('azul', 30), ('roxo', 40)]
+*************************************************************************
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Input em lista
+
+você captura dados do usuario e faz uma lista com esses dados como se fosse uma lista de
+supermercado
+
+***********************************************
+
+fruta_user = input('Faça sua lista separado por virgula:')
+
+fruit_list = fruta_user.split(', ')
+
+print(fruit_list)
+
+***********************************************
+
+Tuple
