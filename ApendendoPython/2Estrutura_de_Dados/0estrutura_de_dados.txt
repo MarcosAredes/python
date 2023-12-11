@@ -293,5 +293,24 @@ Tudo e uma lista mas a forma que é escrito e diferente e como e amarzenado na m
 e que não podem ser alteradas a diferença e quando se deve usar  e que uma tuple se abre e fecha
 com (), você faz basicamente tudo que se faz com uma lista
 
-****************************************************
+***************************************************
 
+cor0 = ['amarelo', 'preto', 'azul', 'roxo']
+
+cor1 = ('amarelo', 'preto', 'azul', 'roxo')
+
+
+print(type(cor0))
+print(type(cor1))
+
+resultado:
+<class 'list'>
+<class 'tuple'>
+
+******************************************************
+
+você não adiciona itens em tuplas igual adiciona itens na listas, nem remover nem alterar.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Arrays:
