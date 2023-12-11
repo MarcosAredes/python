@@ -314,3 +314,47 @@ você não adiciona itens em tuplas igual adiciona itens na listas, nem remover 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Arrays:
+
+Arrays não tem no python originalmente então você tem que imprtar ela 
+'''from array import array''' 
+
+Arrays será usada quando quando sua lista for muito grande e estiver tendo problemas de perfomace
+
+### LER A LISTA ARRAYS 11.1 PARA COMPREENDER###
+
+
+****************************************************
+
+
+from array import array
+
+# Array (Matriz)
+    # Similar a lista
+    # Melhor performace
+
+letras = ['a', 'b', 'c', 'd']
+
+numeros_i = [10, 20, 30, 40]
+numeros_f = [1.2, 2.2, 3.2]
+
+print(letras)
+print(numeros_i)
+print(numeros_f)
+
+print()
+
+letras = array( 'u', ['a', 'b', 'c', 'd'])
+
+#cada letra dessas "u" "i" "f" significa algo por isso ver a lista
+
+numeros_i = array( 'i', [10, 20, 30, 40])
+numeros_f = array ( 'f' ,  [1.2, 2.2, 3.2])
+
+
+print(letras)
+print(numeros_i)
+print(numeros_f)
+
+
+************************************************************
+
