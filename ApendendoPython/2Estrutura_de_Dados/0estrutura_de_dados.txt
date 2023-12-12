@@ -358,3 +358,7 @@ print(numeros_f)
 
 ************************************************************
 
+Sets
+
+Trabalha dentro da lista, evita itens duplicados, não utiliza index e vai similar a listas
+
