@@ -379,3 +379,168 @@ print(num1)
 
 Operadores dentro dos Sets
 
+São "6"
+
+*********************************
+
+1. Uniões (| ou union()):
+
+Operador: |
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+result = set1 | set2  # ou result = set1.union(set2)
+print(result)  # Output: {1, 2, 3, 4, 5}
+
+*************************************
+
+2. Interseção (& ou intersection()):
+
+Operador: &
+Método: intersection()
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+result = set1 & set2  # ou result = set1.intersection(set2)
+print(result)  # Output: {3}
+
+***************************************
+
+3 Diferença (- ou difference()):
+
+Operador: -
+Método: difference()
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+result = set1 - set2  # ou result = set1.difference(set2)
+print(result)  # Output: {1, 2}
+
+*******************************************
+
+4 Diferença Simétrica (^ ou symmetric_difference()):
+
+Operador: ^
+Método: symmetric_difference()
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+result = set1 ^ set2  # ou result = set1.symmetric_difference(set2)
+print(result)  # Output: {1, 2, 4, 5}
+
+***********************************************
+
+5 Verificar Subconjunto (<= ou issubset()):
+
+Operador: <=
+Método: issubset()
+
+set1 = {1, 2, 3}
+set2 = {1, 2, 3, 4, 5}
+result = set1 <= set2  # ou result = set1.issubset(set2)
+print(result)  # Output: True
+
+*************************************************
+
+6 Verificar Superset (>= ou issuperset()):
+
+Operador: >=
+Método: issuperset()
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {1, 2, 3}
+result = set1 >= set2  # ou result = set1.issuperset(set2)
+print(result)  # Output: True
+
+***********************************************************
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Funções em sets
+
+
+As funções mais comuns:
+
+
+
+********************************************************
+
+1 len(): Retorna o número de elementos em um conjunto.
+
+
+conjunto = {1, 2, 3, 4, 5}
+tamanho = len(conjunto)
+print(tamanho)  # Saída: 5
+
+*******************************************************
+
+2 add(): Adiciona um elemento ao conjunto.
+
+conjunto = {1, 2, 3}
+conjunto.add(4)
+print(conjunto)  # Saída: {1, 2, 3, 4}
+
+********************************************************
+
+3 remove(): Remove um elemento específico do conjunto. 
+Se o elemento não estiver presente, ele gera um erro
+
+conjunto = {1, 2, 3, 4}
+conjunto.remove(3)
+print(conjunto)  # Saída: {1, 2, 4}
+
+*********************************************************
+
+4 discard(): Remove um elemento do conjunto, se estiver presente. 
+Não gera um erro se o elemento não estiver no conjunto.
+
+conjunto = {1, 2, 3, 4}
+conjunto.discard(3)
+print(conjunto)  # Saída: {1, 2, 4}
+
+**********************************************************
+
+5 pop(): Remove e retorna um elemento aleatório do conjunto. 
+Se o conjunto estiver vazio, gera um erro.
+
+conjunto = {1, 2, 3, 4}
+elemento_removido = conjunto.pop()
+print(elemento_removido, conjunto)
+
+**************************************************************
+
+6 union(): Retorna a união de dois conjuntos.
+
+conjunto1 = {1, 2, 3}
+conjunto2 = {3, 4, 5}
+uniao = conjunto1.union(conjunto2)
+print(uniao)  # Saída: {1, 2, 3, 4, 5}
+
+*****************************************************************
+
+7 intersection(): Retorna a interseção de dois conjuntos.
+
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {3, 4, 5, 6}
+intersecao = conjunto1.intersection(conjunto2)
+print(intersecao)  # Saída: {3, 4}
+
+******************************************************************
+
+8 difference(): Retorna a diferença entre dois conjuntos.
+
+conjunto1 = {1, 2, 3, 4}
+conjunto2 = {3, 4, 5, 6}
+diferenca = conjunto1.difference(conjunto2)
+print(diferenca)  # Saída: {1, 2}
+
+*********************************************************************
+
+9 clear(): Remove todos os elementos do conjunto, deixando-o vazio.
+
+conjunto = {1, 2, 3, 4}
+conjunto.clear()
+print(conjunto)  # Saída: set()
+
+************************************************************************
+
