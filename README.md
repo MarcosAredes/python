@@ -1,3 +1,5 @@
-  <h1>Python</h1>
-<p>Coisas basicas para tirar duvidas bobas de python
-pois sempre esquece o basico.</p>
+[![My Skills](https://skillicons.dev/icons?i=python)](https://skillicons.dev)
+  <h1>Python<h1>
+
+
+<h2>Qualquer assunto de python</h2>
