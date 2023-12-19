@@ -606,6 +606,9 @@ Utiliza index no formato de Keys e Values, aceita string, integer, float, boolea
 Os dicionários são uma parte fundamental da linguagem Python e são amplamente 
 utilizados em diversos contextos de programação. Eles são eficientes para busca e 
 recuperação de dados quando a relação entre chaves e valores é importante.
+
+As informações de um dicionário pode ser puxada de um banco de dados também
+
 ******************
 
 # Dicionário vazio
@@ -699,5 +702,34 @@ for keys, values in aluno.items():
     print(keys, values)
 
 -------------------------------------------------------------
+
+Visualizando itens, Keys e values:
+
+aluno = {
+    "nome": "ana",
+    "idade": 16,
+    "nota final": "A",
+    "situação": "aprovada",
+    "materias": ["geografia", "historia", "artes"],
+}
+
+print(aluno.items())  # items
+
+# print(aluno.get("materias"))  # values
+
+print(aluno.values()) # values
+
+# print(len(aluno))  # Keys
+
+print(aluno.keys())  # Keys
+
+'''
+resultado:
+
+dict_items([('nome', 'ana'), ('idade', 16), ('nota final', 'A'), ('situação', 'aprovada'), ('materias', ['geografia', 'historia', 'artes'])])
+dict_values(['ana', 16, 'A', 'aprovada', ['geografia', 'historia', 'artes']])
+dict_keys(['nome', 'idade', 'nota final', 'situação', 'materias'])
+
+'''
 
 
