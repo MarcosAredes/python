@@ -1,0 +1,32 @@
+
+----------------------------------------------------------------------------
+Antes temos que entender:
+    Quais (são os erros), (tipos de erros),(como isolar esses erros).
+-----------------------------------------------------------------------------
+
+Erros:
+Exelentes para testes, não realizar o 'stop' no programa, mensagens customizadas
+quando encontra um erro.
+
+------------------------------------------------------------------------------------
+
+Try e Except com lista:
+
+******************************
+
+try:
+    letras = ["a", "b", "c"]
+    print(letras[3])
+
+except IndexError:
+    print("index não existe")
+
+resultado:index não existe
+
+********************************
+
+---------------------------------------------------------------------------------------
+
+Try e Except com input
+
+
