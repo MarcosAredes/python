@@ -732,4 +732,213 @@ dict_keys(['nome', 'idade', 'nota final', 'situação', 'materias'])
 
 '''
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Funções Lambda
+
+É uma função (pequena) sem nome, pode ter vários argumentos mas somente 1 expressão,
+muito utilizada dentro de outras funções, código mais 'clean'.
+
+************************
+
+"""
+def soma(x):
+    return x + 10
+print(soma(2))
+
+resultado: 12
+"""
+
+somar10 = lambda x: x + 10
+print(somar10(2))
+
+resultado: 12
+
+nessa temos apenas um (X)
+**************************
+
+somar10 = lambda x, y: x + y + 10
+print(somar10(2, 4))
+ 
+Nessa temos varios argumentos (X, Y), mas apenas uma expressão.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Lambda dentro de uma função:
+
+********************************
+
+def somar(x):
+    func2 = lambda x: x + 10
+    return func2(x) * 4
+
+
+print(somar(2))
+
+**********************************
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+Função map em uma list
+
+A função map em Python é uma função integrada que permite aplicar uma função a todos 
+os itens de uma ou mais sequências (geralmente listas, tuplas ou dicionário) e retorna um iterador 
+que produz os resultados.
+
+*******************************
+
+lista1 = [1, 2, 3, 4]
+
+
+def multi(x):
+    return x * 2
+
+
+lista2 = map(multi, lista1)
+
+print(list(lista2))
+
+resultado:[2, 4, 6, 8]
+
+**********************************
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Função map com lambda:
+
+Sai de 5 linhas de codigo para 2
+
+*************************************
+
+lista1 = [1, 2, 3, 4]
+
+print(list(map(lambda x: x * 2, lista1)))
+
+*******************************************
+
+---------------------------------------------------------------------------------------------------------------
+
+Função Filter
+
+Faz o mesmo que o map no sentido de rodar uma função dentro de uma lista
+mas ao invés de dar somente o resultado como o map ela consegue filtrar
+o resultado.
+
+Muito utilizado com listas, aplicar uma função a im interable, filtrando os items.
+(list, tuple, dicionário, etc.)
+
+***************************************
+
+Com map
+
+valores = [10, 12, 34, 44, 57]
+
+
+def remover20(x):
+    return x > 20
+
+
+print(list(map(remover20, valores)))
+
+resultado:[False, False, True, True, True]
+
+********************************************
+
+Com Filter
+
+valores = [10, 12, 34, 44, 57]
+
+
+def remover20(x):
+    return x > 20
+
+
+print(list(filter(lambda x: x > 20, valores)))
+
+resultado:[34, 44, 57]
+
+************************************************
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+List Comprehension com String
+
+Mais simples de escrever, utilizado quando você precisa criar uma nova lista a partir 
+de uma existente[expressão for iten in itens].
+
+****************************************
+
+Com For Loop
+
+frutas1 = ["abacate", "banana", "morango", "kiwi", "abacaxi"]
+
+frutas2 = []
+
+for itens in frutas1:
+    if "b" in itens:
+        frutas2.append(itens)
+
+print(frutas2)
+
+*******************************************
+
+Com List Comprehension
+
+frutas1 = ["abacate", "banana", "morango", "kiwi", "abacaxi"]
+
+frutas2 = [iten for iten in frutas1 if "b" in iten]
+
+print(frutas2)
+
+**********************************************
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+List Comprehension com números
+
+***********************************************
+Com for loops
+
+valores = []
+
+for x in range(6):
+    valores.append(x * 10)
+
+print(valores)
+
+*************************************************
+
+Com List Comprehension #for iten in itens
+
+valores1 = [x * 10 for x in range(6)]
+
+print(valores1)
+
+*****************************************************
+
+---------------------------------------------------------------------------------------------------------------
+
+Generator Expressions:
+
+Generator expressions em Python são uma maneira concisa de criar generadores. 
+Eles são semelhantes às list comprehensions, mas em vez de criar uma lista completa 
+na memória, eles geram os itens um de cada vez, à medida que você itera sobre eles. 
+Isso é especialmente útil quando lidamos com grandes conjuntos de dados, pois permite 
+economizar memória.
+Forma mais rápida para Listas, dicionários, etc, valores em bytes.
+
+
+from sys import getsizeof
+
+numeros = [x * 10 for x in range(1000)]
+print(type(numeros))                         #Class List: 8856 memoria gasta
+print(getsizeof(numeros))           
+
+print("=================")
+
+numeros = (x * 10 for x in range(1000))
+print(type(numeros))                          #Class Generator: 200 memoria gasta
+print(getsizeof(numeros))
+
+------------------------------------------------------------------------------------------------------------------------
