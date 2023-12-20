@@ -8,6 +8,55 @@ Erros:
 Exelentes para testes, não realizar o 'stop' no programa, mensagens customizadas
 quando encontra um erro.
 
+
+ Try Except:
+
+
+  bloco try-except é usado para lidar com exceções.
+
+------------------------------------------------------------------------------
+
+****************************************************************************************
+
+  try:
+    # código que pode gerar uma exceção
+    resultado = 10 / 0  # Isso causará uma ZeroDivisionError
+
+
+except ZeroDivisionError as e:
+    # código para lidar com a exceção específica
+    print(f"Erro: {e}")
+
+
+except Exception as em:
+    # código para lidar com outras exceções
+    print(f"Outro erro: {em}")
+
+
+else:
+    # código opcional que é executado se nenhuma exceção for gerada
+    print("Nenhum erro ocorreu")
+    
+
+finally:
+    # código opcional que é sempre executado
+    #, independentemente de uma exceção ter ocorrido ou não
+    print("Isso sempre será executado")
+
+********************************************************************************************************
+
+--------------------------------------------------------------------------------------------
+
+Neste exemplo, o bloco try contém o código que pode gerar uma exceção. 
+Se ocorrer uma ZeroDivisionError, o primeiro bloco except é executado. 
+Se ocorrer qualquer outra exceção, ela será capturada pelo segundo bloco except. 
+O bloco else é executado se nenhuma exceção ocorrer, e o bloco finally é sempre 
+executado, independentemente de ocorrer uma exceção ou não.
+
+Certifique-se de substituir o código de exemplo pelo seu próprio código que pode gerar 
+exceções e ajustar os blocos except para lidar com as exceções específicas que você 
+espera.
+
 ------------------------------------------------------------------------------------
 
 Try e Except com lista:
@@ -28,5 +77,45 @@ resultado:index não existe
 ---------------------------------------------------------------------------------------
 
 Try e Except com input
+
+************************************************************
+
+try:
+    valor = int(input("Digite o valor do seu produto: "))
+    print(type(valor))
+
+except ValueError:
+    print("Digitar apenas numeros")
+
+**************************************************************
+
+--------------------------------------------------------------------------------------------
+
+Else e Finally:
+
+**************************************************************
+
+try:
+    valor = int(input("Digite o valor do seu produto: "))
+    print(valor)
+
+except ValueError:
+    print("Digitar apenas numeros")
+
+else:
+    print("Usuario digitou um valor correto")
+    resultado = valor * 5
+    print(resultado)
+
+
+finally:
+    print("codigo ok")
+
+*******************************************************************
+
+---------------------------------------------------------------------------------------------------------
+
+
+
 
 
