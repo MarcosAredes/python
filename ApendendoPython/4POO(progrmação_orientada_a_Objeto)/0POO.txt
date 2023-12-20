@@ -1,0 +1,15 @@
+
+-------------------------------------------------------------------------------------------------
+
+A Programação Orientada a Objetos (OOP) é um paradigma de programação no qual 
+podemos pensar em problemas complexos como objetos.
+
+Um paradigma é uma teoria que fornece a base para a solução de problemas.
+
+Portanto, quando falamos de OOP, estamos nos referindo a um conjunto de conceitos e 
+padrões que usamos para resolver problemas com objetos.
+
+Um objeto em Python é uma única coleção de dados (atributos) e comportamento (métodos).
+Você pode pensar em objetos como coisas reais ao seu redor.
+
+---------------------------------------------------------------------------------------------------
