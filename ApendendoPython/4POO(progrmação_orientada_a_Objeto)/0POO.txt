@@ -16,6 +16,58 @@ Você pode pensar em objetos como coisas reais ao seu redor.
 
 Classes:
 
+
 Utilizadas para criar Objetos (Instances), Objetos são partes dentro de uma Class (Instancias),
 Classes são utilizadas para  agrupar dados e funções, podendo reutilizar.
 
+
+São uma parte fundamental da programação orientada a objetos (OOP) em Python. 
+Elas são usadas para organizar o código em estruturas mais modularizadas, permitindo
+a criação de objetos que possuem atributos e métodos.
+
+*********************************************************************************************
+
+ # Definição de uma classe simples chamada 'Pessoa'
+
+class Pessoa:
+    # Método especial chamado construtor (é chamado quando um objeto é criado)
+    def __init__(self, nome, idade):
+        # Atributos da classe
+        self.nome = nome
+        self.idade = idade
+
+
+    # Método da classe para exibir informações sobre a pessoa
+    def exibir_informacoes(self):
+        print(f"Nome: {self.nome}, Idade: {self.idade}")
+
+
+# Criando instâncias (objetos) da classe Pessoa
+pessoa1 = Pessoa("João", 30)
+pessoa2 = Pessoa("Maria", 25)
+
+
+# Chamando o método para exibir informações sobre as pessoas
+pessoa1.exibir_informacoes()
+pessoa2.exibir_informacoes()
+
+**************************************************************************************************
+
+Pessoa é uma classe que possui um construtor __init__, onde os atributos nome e 
+idade são inicializados.
+
+
+exibir_informacoes é um método da classe que exibe informações sobre a pessoa.
+
+
+pessoa1 e pessoa2 são instâncias (objetos) da classe Pessoa criadas com valores 
+específicos para os atributos.
+
+**************************************************************************************************
+
+Ao executar esse código, você verá a seguinte saída:
+
+Nome: João, Idade: 30
+Nome: Maria, Idade: 25
+
+***************************************************************************************************
