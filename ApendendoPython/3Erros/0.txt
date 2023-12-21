@@ -196,7 +196,7 @@ que o denominador não seja zero antes de realizar a divisão.
 
 =======================================================================================
 
-Deverás importante
+Deveras importante
 
 (Lembre-se de que entender a mensagem de erro que você recebe é 
 crucial para corrigir o problema. As mensagens de erro geralmente 
