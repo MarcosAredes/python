@@ -116,6 +116,90 @@ finally:
 ---------------------------------------------------------------------------------------------------------
 
 
+Erros comuns:
 
+Erros são comuns na programação em Python, e entender como lidar 
+com eles é uma parte importante do desenvolvimento de software.
+Aqui estão alguns dos erros mais comuns em Python e algumas 
+explicações sobre como corrigi-los:
 
+=======================================================================
 
+SyntaxError:
+Esse erro ocorre quando há um problema de sintaxe no código. 
+Pode ser causado por parênteses ausentes, pontos e vírgulas, aspas 
+não fechadas, etc. Verifique a linha e os arredores para corrigir a 
+sintaxe.
+
+========================================================================
+
+IndentationError:
+Python utiliza a indentação para definir blocos de código. 
+Se houver um erro de indentação, como espaços mistos e tabulações, 
+Python lançará esse erro. Mantenha a consistência na indentação.
+
+========================================================================
+
+NameError:
+Isso acontece quando você tenta usar uma variável ou função que não
+foi definida. Certifique-se de que a variável ou função está 
+corretamente declarada antes de usá-la.
+
+==========================================================================
+
+TypeError:
+Este erro ocorre quando você tenta realizar uma operação em tipos 
+de dados incompatíveis. Por exemplo, tentar concatenar uma string 
+com um número. Verifique os tipos de dados envolvidos e ajuste o 
+código conforme necessário.
+
+============================================================================
+
+IndexError:
+Se você tentar acessar um índice que não existe em uma lista, 
+tupla ou sequência, receberá esse erro. Certifique-se de que o 
+índice esteja dentro dos limites válidos.
+
+==============================================================================
+
+KeyError:
+Ao tentar acessar um dicionário usando uma chave que não existe, 
+esse erro é gerado. Certifique-se de que a chave que você está 
+usando está presente no dicionário.
+
+===============================================================================
+
+FileNotFoundError:
+Isso ocorre quando você tenta abrir um arquivo que não existe. 
+Certifique-se de que o caminho do arquivo está correto ou crie o 
+arquivo se ele não existir.
+
+=================================================================================
+
+ModuleNotFoundError:
+Quando você tenta importar um módulo que não está instalado ou 
+não está no caminho de busca, esse erro é gerado. Instale o módulo 
+ou ajuste o caminho conforme necessário.
+
+===================================================================================
+
+AttributeError:
+Esse erro ocorre quando você tenta acessar um atributo ou método 
+que não existe no objeto. Verifique se o objeto possui o atributo 
+ou método desejado.
+
+=====================================================================================
+
+ZeroDivisionError:
+Ao tentar dividir por zero, esse erro é gerado. Certifique-se de 
+que o denominador não seja zero antes de realizar a divisão.
+
+=======================================================================================
+
+Deverás importante
+
+(Lembre-se de que entender a mensagem de erro que você recebe é 
+crucial para corrigir o problema. As mensagens de erro geralmente 
+indicam a linha e a natureza do erro, o que facilita a correção.)
+
+=========================================================================================

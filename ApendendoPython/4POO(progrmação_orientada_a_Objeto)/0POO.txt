@@ -13,3 +13,9 @@ Um objeto em Python é uma única coleção de dados (atributos) e comportamento
 Você pode pensar em objetos como coisas reais ao seu redor.
 
 ---------------------------------------------------------------------------------------------------
+
+Classes:
+
+Utilizadas para criar Objetos (Instances), Objetos são partes dentro de uma Class (Instancias),
+Classes são utilizadas para  agrupar dados e funções, podendo reutilizar.
+
