@@ -1,0 +1,65 @@
+Em Python, um módulo é um arquivo contendo código Python que pode incluir funções, 
+classes e variáveis. O principal propósito de dividir o código em módulos é organizar 
+e reutilizar o código de forma eficiente. Vamos explorar as principais características
+dos módulos:
+
+----------------------------------------------------------------------------------------
+
+1.Organização do Código:
+
+° Os módulos ajudam na organização do código ao dividir o código-fonte em unidades lógicas
+e independentes.
+
+° Cada módulo pode conter várias funções, classes e variáveis relacionadas a um 
+determinado contexto.
+
+---------------------------------------------------------------------------------------------
+
+2.Reutilização de Código:
+
+° Módulos permitem a reutilização de código. Se você tem uma funcionalidade específica em
+um módulo, pode importar esse módulo em diferentes partes do seu projeto ou em 
+diferentes projetos.
+
+Importação de Módulos:
+
+° Para usar um módulo em um arquivo Python, você usa a declaração import. Por exemplo, 
+import meumodulo.
+
+° Depois de importar um módulo, você pode acessar suas funções, classes ou variáveis 
+usando a notação de ponto, como meumodulo.funcao().
+
+----------------------------------------------------------------------------------------------
+
+3.Namespace:
+
+° Módulos fornecem um namespace separado para evitar conflitos de nomes. Isso significa 
+que funções, classes e variáveis em um módulo não entram em conflito com nomes semelhantes
+em outros módulos ou no código principal.
+
+--------------------------------------------------------------------------------------------------
+
+4.Módulos Embutidos:
+
+°Python também possui muitos módulos embutidos que fornecem funcionalidades adicionais. 
+Alguns exemplos incluem math para operações matemáticas, datetime para manipulação de 
+datas e horas, e assim por diante.
+
+--------------------------------------------------------------------------------------------------
+
+Ex:
+
+# modulo.py
+
+def saudacao(nome):
+    return f"Olá, {nome}!"
+
+def soma(a, b):
+    return a + b
+
+--------------------------
+
+import meumodulo
+
+print(meumodulo.saudacao("Alice"))
+print(meumodulo.soma(3, 5))
