@@ -63,3 +63,49 @@ import meumodulo
 
 print(meumodulo.saudacao("Alice"))
 print(meumodulo.soma(3, 5))
+
+Não é aconselhável utilizar em codigos grandes(Jogando todas as funções)
+dentro de um só modulo vai separando 
+EX:
+
+1Main.py
+Funcao1.py (Quando for modulo o numero e sempre no final)
+
+
+2Main.py
+Funcao2.py (Quando for modulo o numero e sempre no final)
+
+Para que não fique desorganizado
+--------------------------------------------------------------------------------------------
+
+Você pode puxar o modulo pelo from ou import 
+
+*********************************************
+//Função//
+
+def ola():
+    print("Olá, M4SS")
+
+
+def soma():
+    print(3 + 6)
+
+************************************************
+//Import// Você vai puxar tudo que tem no seu codigo.
+
+import funcao
+
+
+funcao.ola()
+
+funcao.soma
+
+**************************************************
+//from// Você vai importar apenas as funções desejadas
+
+from funcao1 import ola, soma (Você pode utilizar o '*' para puxar tudo mas depois vai dar merda)
+
+
+ola()
+
+soma()
