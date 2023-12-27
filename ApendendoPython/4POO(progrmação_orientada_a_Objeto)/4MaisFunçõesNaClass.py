@@ -13,7 +13,7 @@ class Funcionarios:
 
 
 usuario1 = Funcionarios("Eleanor", "Rigby", "05/08/1966")
-usuario2 = Funcionarios("mister", "Rigby", "05/08/1966")
+usuario2 = Funcionarios("mister", "postman", "05/08/1966")
 
 
 #   Os dados não são passados diretamente na função, agora são associados aos parametros
