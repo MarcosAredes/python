@@ -1,6 +1,4 @@
-
 # == WHILE LOOP ===
-
 
 
 valor = 200
@@ -9,8 +7,5 @@ dia = 0
 
 while valor > 20:
     dia += 1
-    print (f' No dia {dia} o produto vai ser vendido por R${valor}')
+    print(f" No dia {dia} o produto vai ser vendido por R${valor}")
     valor -= 5
-
-
-

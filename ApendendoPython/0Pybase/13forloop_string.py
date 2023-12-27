@@ -1,11 +1,10 @@
+# for loop para string
 
-#for loop para string
 
-
-for sopa_de_letrinhas in 'Paparelepipedo':
+for sopa_de_letrinhas in "Paparelepipedo":
     print(sopa_de_letrinhas)
 
-'''
+"""
     Você pode associar sua palavra a uma variavel e em vez de escrever só coloca o nome da 
     variavel.
 
@@ -24,4 +23,4 @@ for sopa_de_letrinhas in palavra:
 
     print(f'{sopa_de_letrinhas} Está dentro da palavra {palavra}')
     Se voce coolocar as variaveis em vez da palavar depois só mudar a variavel.
-    '''
+    """

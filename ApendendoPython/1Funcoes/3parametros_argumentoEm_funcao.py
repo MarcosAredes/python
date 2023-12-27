@@ -1,27 +1,16 @@
-
-
-
-
-
-             # Esse e o paramentro
+# Esse e o paramentro
 def boas_vindas(nome, quantidade):
-    print(f'Olá {nome}.')
-    print(f'Temos {str(quantidade)} notebooks em estoque')
-
-boas_vindas('Mustang', 5)
-boas_vindas('Camaro', 3)
-boas_vindas('plymouth', 1)
-            #Aqui são os argumentos
+    print(f"Olá {nome}.")
+    print(f"Temos {str(quantidade)} notebooks em estoque")
 
 
+boas_vindas("Mustang", 5)
+boas_vindas("Camaro", 3)
+boas_vindas("plymouth", 1)
+# Aqui são os argumentos
 
 
-
-
-
-
-
-'''
+"""
 def lojinha():
     print('Olá Mustang !')
     print('Temos 5 notebooks em estoque')
@@ -41,4 +30,4 @@ def lojinha3():
     print('Temos 1 notebooks em estoque')
 
 lojinha3()
-'''
+"""

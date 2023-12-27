@@ -1,5 +1,3 @@
-
-
 operador1 = 10 == 10
 operador2 = 20 != 20
 operador3 = 30 > 20

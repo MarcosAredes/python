@@ -6,8 +6,8 @@ calculo3 = 2 * 2
 
 calculo4 = 2 / 2
 
-calculo5 = 2 + 2 - (99-98)
+calculo5 = 2 + 2 - (99 - 98)
 
-calculo6 = 2 + 2 - (99-98) + 6 ** 5
+calculo6 = 2 + 2 - (99 - 98) + 6**5
 
 print(calculo6)
