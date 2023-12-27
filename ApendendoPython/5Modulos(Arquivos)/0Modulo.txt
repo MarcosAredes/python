@@ -113,3 +113,29 @@ soma()
 
 
 Packages:
+
+Os Packages são pastas que contem algum arquivo .py que você ira puxar
+as funções dele para poder utilizar-lo.
+Para poder utilizar o package você tem que criar um arquivo 
+__init__.py para q possa inicializar o package e ler no mesmo nivel do
+main.py e funcao.py 
+
+depois de criar o arquivo __init__.py e um outro arquivo q voce queira usar
+o codigo para  importar irá ficar assim
+
+
+**************************************************
+
+from funcao1 import ola, soma (Normal)
+
+from packages.cadastro import client(Packages)
+
+ola()
+
+soma()
+
+client()
+
+******************************************************
+
+----------------------------------------------------------------------------------------------
