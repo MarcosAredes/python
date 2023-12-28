@@ -1,0 +1,80 @@
+O que e Data Science(Ciência de dados):
+
+Data Science é uma disciplina multidisciplinar que envolve a 
+extração de informações úteis e insights a partir de dados. 
+Ela combina conhecimentos de estatística, matemática, programação, 
+ciência da computação e domínio do assunto para analisar conjuntos 
+de dados complexos.
+
+---------------------------------------------------------------------------------------
+
+O processo de Data Science geralmente envolve as seguintes etapas:
+
+
+1° Coleta de Dados: 
+
+Obtenção de dados relevantes para o problema em questão. Os dados 
+podem ser estruturados (como tabelas em bancos de dados) ou não 
+estruturados (como texto, imagens ou áudio).
+
+---------------------------------------------------------------------------------------
+
+2° Limpeza de Dados: 
+
+Trata-se de lidar com dados ausentes, inconsistentes ou incorretos.
+Isso inclui a remoção de outliers e a normalização de dados.
+
+---------------------------------------------------------------------------------------
+
+3° Exploração de Dados (EDA):
+
+Compreensão inicial dos dados por meio de estatísticas descritivas, visualizações e 
+outras técnicas exploratórias. O EDA ajuda a identificar padrões, tendências e relações
+nos dados.
+
+----------------------------------------------------------------------------------------
+
+4° Preparação de Dados: 
+
+Transformação dos dados em um formato adequado para análise. Isso pode envolver a 
+criação de features (variáveis) adicionais, codificação de variáveis categóricas, 
+normalização, etc.
+
+-----------------------------------------------------------------------------------------
+
+5° Modelagem:
+
+Desenvolvimento de modelos estatísticos ou algoritmos de machine learning para fazer 
+previsões ou tomar decisões com base nos dados.
+
+-----------------------------------------------------------------------------------------
+
+6° Avaliação do Modelo: 
+
+Avaliação do desempenho do modelo em dados não vistos. Isso ajuda a garantir que o 
+modelo seja capaz de generalizar bem para novos dados.
+
+-----------------------------------------------------------------------------------------
+
+7° Interpretação e Comunicação dos Resultados: 
+
+Compreensão dos resultados obtidos e comunicação desses resultados de maneira clara e 
+compreensível para as partes interessadas.
+
+------------------------------------------------------------------------------------------
+
+8° Iteração: 
+
+Com base nos resultados e nas necessidades do projeto, o cientista de dados pode iterar
+em várias etapas do processo para melhorar a qualidade dos resultados.
+
+-------------------------------------------------------------------------------------------
+
+Data Science é amplamente aplicada em diversas áreas, incluindo finanças, saúde, 
+marketing, ciências sociais, entre outras. A análise de grandes conjuntos de dados 
+permite identificar padrões e tendências que podem levar a uma tomada de decisão mais 
+informada e à resolução de problemas complexos.
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
