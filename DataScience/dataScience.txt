@@ -78,3 +78,37 @@ informada e à resolução de problemas complexos.
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 
+Plataformas:
+
+----------------------------------
+|Primeiro ter o Python instalado |
+|Segundo escolher a IDE          |
+|Terceiro intalar as bibliotecas |
+----------------------------------
+
+Podemos achar tudo isso dentro do pacote 'Anaconda' 
+     ( https://www.anaconda.com/download )
+
+
+                        Algumas bibliotecas
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+|O Anaconda e aconselhado pois já vem com +ou- 8.000 pacotes para data science e                                                                           | 
+|machine learning e ainda e open-source                                                                                                                    |     
+|                                                                                                                                                          |     
+|Anaconda (python):                                                                                                                                        | 
+|Plataforma de distribuição para ciência de dados com python.                                                                                              |         
+|Simplifica o gerenciamento e implantação de pacotes.                                                                                                      |     
+|                                                                                                                                                          | 
+|                                                                                                                                                          | 
+|NumPy ---> Computação matemática com Python.                                                                                                              | 
+|Pandas ---> Manipulação e análise de dados. Trabalha em conjunto com Numpy.                                                                               |
+|Scikit learn ---> Aprendizado de máquina (machine learning) em python.                                                                                    |
+|Matplotlib ---> Criação de gráficos e visualização de dados em geral.                                                                                     |     
+|Seaborn ---> Visualização de dados baseado no matplotlib.                                                                                                 |     
+|Fornece interface de alto nível para desenhar graficos estatísticos atraentes e informativos.                                                             |
+|plotly ---> Criação de gráficos e visualização de dados de forma interativa, com interface de alto nível.                                                 |
+|TensorFlow ---> Biblioteca de código aberto. Desenvolvido pela Google Brain Team para aprendizado de máquina e pesquisa de redes neurais profundas.       |
+|Keras deep learning library ---> biblioteca rede neural de código aberto. roda em cima do tensor TensorFlow                                               | 
+|SciPy ---> É uma biblioteca baseado em Python, de código aberto, para matemática, ciências e engenharia.                                                  | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
