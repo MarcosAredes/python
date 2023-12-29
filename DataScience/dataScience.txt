@@ -110,62 +110,153 @@ Podemos achar tudo isso dentro do pacote 'Anaconda'
 |TensorFlow ---> Biblioteca de código aberto. Desenvolvido pela Google Brain Team para aprendizado de máquina e pesquisa de redes neurais profundas.       |
 |Keras deep learning library ---> biblioteca rede neural de código aberto. roda em cima do tensor TensorFlow                                               | 
 |SciPy ---> É uma biblioteca baseado em Python, de código aberto, para matemática, ciências e engenharia.                                                  | 
-|------------------------------------------------------------------------------------------------------------------------------------------------------------
-|
-|------------------------------------------------------------------------------------------------------------------------------------------------------------
-|
-|
-|Depois de intalar o "Anaconda" você abre o Anaconda Navigator
-|dentro do anaconda navigator temos 4 paginas.
-|
-|sempre reiniciar a maquina depois de instalar alguma coisa.
-|
-|Home -> Onde mostra algumas coisas que você tem instalado e que pode ser instalado
-|
-|Enveronments -> Como se fosse uma instancia dentro do sistema operacional que tem o
-|primeiro enveronments que chama 'base' e dentro de base temos intalados todos os packages
-|python... voce pode ter varios e ir pulando entre eles
-|
-|Learning -> A parte onde contem documentação para ler e trinar
-|
-|Community -> Você pode encotrar pessos que estão trabalhando em projetos com você ou similares
-|
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------
-|
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------
-|
-|
-|JupyterLab:
-| Você vai achar ele no Anaconda Navigator na Home so clicar em launch pronto
-| (Anaconda Navigator -> Home -> JupyterLab ->Launch).
-| OBS: se o JupyterLab estiver com o botão de install ele vai pedir para instalar o 
-| node.js(instala pelo Google) e depois instala o JupyterLab.
-| 
-|O JupyterLab e uma interface Web mas está rodando em sua maquina.
-| 
-|Você tem que verificar se o Pandas, NumPy, Matplotlib estão instalados.
-|  (Anaconda Navigator -> Home -> CMD.exe Prompt ->Launch)
-|  
-| os comandos no CMD são
-| 
-| pip install pandas 
-| pip install numpy 
-| pip install matplotlib
-| 
-| Se já estiver instalado irá aparecer a seguinte mensagem (Requirement already satisfied:)
-|
-| Todas as pastas/alterações que você fizer estará dentro da sua pasta usuario 
-|  (C:\Users\YourUser\FolderWithNameYouGave)
-|   esse e seu caminho para ter acesso 
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>=|
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                          |     
+|                                                                                                                                                          |
+|Depois de intalar o "Anaconda" você abre o Anaconda Navigator                                                                                             |
+|dentro do anaconda navigator temos 4 paginas.                                                                                                             |
+|                                                                                                                                                          |     
+|sempre reiniciar a maquina depois de instalar alguma coisa.                                                                                               |     
+|                                                                                                                                                          |     
+|Home -> Onde mostra algumas coisas que você tem instalado e que pode ser instalado                                                                        |
+|                                                                                                                                                          |     
+|Enveronments -> Como se fosse uma instancia dentro do sistema operacional que tem o                                                                       |     
+|primeiro enveronments que chama 'base' e dentro de base temos intalados todos os packages                                                                 |                   
+|python... voce pode ter varios e ir pulando entre eles                                                                                                    |
+|                                                                                                                                                          |
+|Learning -> A parte onde contem documentação para ler e trinar                                                                                            |
+|                                                                                                                                                          |
+|Community -> Você pode encotrar pessos que estão trabalhando em projetos com você ou similares                                                            |
+|                                                                                                                                                          |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>==>=|                                                                                                                                                       
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                          |
+|                                                                                                                                                          |
+|JupyterLab:                                                                                                                                               |
+| Você vai achar ele no Anaconda Navigator na Home so clicar em launch pronto                                                                              |
+| (Anaconda Navigator -> Home -> JupyterLab ->Launch).                                                                                                     |
+| OBS: se o JupyterLab estiver com o botão de install ele vai pedir para instalar o                                                                        |
+| node.js(instala pelo Google) e depois instala o JupyterLab.                                                                                              |
+|                                                                                                                                                          |
+|O JupyterLab e uma interface Web mas está rodando em sua maquina.                                                                                         |
+|                                                                                                                                                          |
+|Você tem que verificar se o Pandas, NumPy, Matplotlib estão instalados.                                                                                   |
+|  (Anaconda Navigator -> Home -> CMD.exe Prompt ->Launch)                                                                                                 |
+|                                                                                                                                                          |
+| os comandos no CMD são                                                                                                                                   |
+|                                                                                                                                                          |
+| pip install pandas                                                                                                                                       |
+| pip install numpy                                                                                                                                        |
+| pip install matplotlib                                                                                                                                   |
+|                                                                                                                                                          |
+| Se já estiver instalado irá aparecer a seguinte mensagem (Requirement already satisfied:)                                                                |
+|                                                                                                                                                          |
+| Todas as pastas/alterações que você fizer estará dentro da sua pasta usuario                                                                             |
+|  (C:\Users\YourUser\FolderWithNameYouGave)                                                                                                               |
+|   esse e seu caminho para ter acesso                                                                                                                     |
+|                                                                                                                                                          |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dados:
+
+Em ciência de dados, o termo "dado" refere-se a informações ou fatos que podem ser 
+coletados, armazenados e analisados. Os dados são a matéria-prima fundamental para os 
+cientistas de dados, pois são a base para a obtenção de insights, tomada de decisões e 
+construção de modelos preditivos. Aqui estão alguns conceitos importantes relacionados a 
+dados em ciência de dados:
+
+===============================================================================================
+
+Tipos de Dados:
+
+Dado Estruturado: Dados organizados em tabelas ou formatos tabulares, como bancos de 
+dados relacionais.
+
+Dado Não Estruturado: Dados que não têm uma estrutura fixa, como texto não formatado, 
+imagens, áudio e vídeo.
+
+Dado Semiestruturado: Dados que não se encaixam completamente em um formato estruturado, 
+mas têm alguma estrutura, como documentos XML ou JSON.
+
+===============================================================================================
+
+Fontes de Dados:
+
+Dado Primário: Dados coletados diretamente de fontes originais por meio de experimentos, 
+pesquisas ou observações.
+
+Dado Secundário: Dados que foram coletados por outra pessoa ou organização para propósitos
+diferentes dos seus, mas que podem ser relevantes para a sua análise.
+
+===============================================================================================
+
+Processamento de Dados:
+
+Limpeza de Dados: Remoção de valores ausentes, tratamento de outliers e correção de 
+erros nos dados para garantir qualidade.
+
+Transformação de Dados: Conversão de dados em um formato mais adequado para análise, 
+como normalização ou codificação de variáveis.
+
+===============================================================================================
+
+Medidas Estatísticas:
+
+Média: Valor médio de um conjunto de dados.
+
+Mediana: Valor do meio em um conjunto ordenado de dados.
+
+Desvio Padrão: Medida de dispersão que indica quão espalhados estão os valores em torno 
+da média.
+
+===============================================================================================
+
+Visualização de Dados:
+
+Gráficos: Representações visuais dos dados, como histogramas, gráficos de dispersão e box plots.
+
+Dashboards: Painéis interativos que consolidam informações importantes de forma visual.
+
+===============================================================================================
+
+Aprendizado de Máquina:
+
+Treinamento de Modelo: Utilização de dados para ensinar um algoritmo a fazer previsões 
+ou tomar decisões.
+
+Conjunto de Treinamento e Teste: Divisão dos dados em partes para treinar o modelo e 
+testar sua performance.
+
+===============================================================================================
+
+Privacidade e Ética:
+
+Privacidade dos Dados: Garantir que os dados sejam tratados de maneira ética e que a 
+privacidade das pessoas seja preservada.
+
+Bias nos Dados: Viés que pode surgir devido a desigualdades nos dados, levando a 
+resultados injustos.
+
+================================================================================================
+
+Em resumo, os dados desempenham um papel crucial em todas as fases do processo de 
+ciência de dados, desde a coleta até a interpretação dos resultados. A qualidade, 
+integridade e relevância dos dados são fundamentais para garantir análises e tomadas 
+de decisão precisas e confiáveis.
+
+------------------------------------------------------------------------------------------------
+
+Caso precise de alguns dados para criar projeto pessoal (https://www.kaggle.com) esse
+site tem varios "dados" para voce fazer projetos pessoais 
+No site tem muita coisa sobre Data Science e Machine Learning 
+
+------------------------------------------------------------------------------------------------
+
+Pandas
+
+O que é:
