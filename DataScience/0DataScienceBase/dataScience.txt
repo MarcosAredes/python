@@ -257,6 +257,42 @@ No site tem muita coisa sobre Data Science e Machine Learning
 
 ------------------------------------------------------------------------------------------------
 
-Pandas
+* Em todas as bibliotecas SEMPRE olha a documentação dela *
+
+Pandas (Com Python)
+
+Documentação do Pandas (https://pandas.pydata.org/docs/)
 
 O que é:
+
+Pandas é uma biblioteca de software escrita para a linguagem de programação Python para
+manipulação e análise de dados. Ela fornece estruturas de dados eficientes e fáceis de 
+usar, como o DataFrame, que é uma tabela bidimensional com rótulos em linhas e colunas. 
+O Pandas é amplamente utilizado em ciência de dados, análise financeira, estatísticas e
+outras áreas onde a manipulação de dados é uma parte essencial do processo.
+
+Algumas características principais do Pandas incluem:
+
+DataFrame: 
+Uma estrutura de dados tabular bidimensional com rótulos em linhas e colunas, 
+semelhante a uma planilha.
+
+Series: 
+Uma estrutura de dados unidimensional que pode armazenar qualquer tipo de dado.
+
+Operações de dados: 
+O Pandas oferece uma ampla variedade de funções e métodos para 
+realizar operações de manipulação, limpeza e análise de dados.
+
+Leitura e escrita de dados: 
+O Pandas suporta a leitura e escrita de dados em vários formatos, como CSV, Excel, 
+SQL, HDF5, e outros.
+
+Indexação sofisticada: 
+O Pandas permite indexar dados de maneiras complexas, facilitando a recuperação e 
+manipulação de informações específicas.
+
+O Pandas é uma ferramenta essencial em muitos projetos de ciência de dados e análise 
+de dados em Python devido à sua eficiência, flexibilidade e facilidade de uso.
+
+
