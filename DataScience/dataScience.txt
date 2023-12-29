@@ -110,5 +110,62 @@ Podemos achar tudo isso dentro do pacote 'Anaconda'
 |TensorFlow ---> Biblioteca de código aberto. Desenvolvido pela Google Brain Team para aprendizado de máquina e pesquisa de redes neurais profundas.       |
 |Keras deep learning library ---> biblioteca rede neural de código aberto. roda em cima do tensor TensorFlow                                               | 
 |SciPy ---> É uma biblioteca baseado em Python, de código aberto, para matemática, ciências e engenharia.                                                  | 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+|------------------------------------------------------------------------------------------------------------------------------------------------------------
+|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------
+|
+|
+|Depois de intalar o "Anaconda" você abre o Anaconda Navigator
+|dentro do anaconda navigator temos 4 paginas.
+|
+|sempre reiniciar a maquina depois de instalar alguma coisa.
+|
+|Home -> Onde mostra algumas coisas que você tem instalado e que pode ser instalado
+|
+|Enveronments -> Como se fosse uma instancia dentro do sistema operacional que tem o
+|primeiro enveronments que chama 'base' e dentro de base temos intalados todos os packages
+|python... voce pode ter varios e ir pulando entre eles
+|
+|Learning -> A parte onde contem documentação para ler e trinar
+|
+|Community -> Você pode encotrar pessos que estão trabalhando em projetos com você ou similares
+|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|
+|
+|JupyterLab:
+| Você vai achar ele no Anaconda Navigator na Home so clicar em launch pronto
+| (Anaconda Navigator -> Home -> JupyterLab ->Launch).
+| OBS: se o JupyterLab estiver com o botão de install ele vai pedir para instalar o 
+| node.js(instala pelo Google) e depois instala o JupyterLab.
+| 
+|O JupyterLab e uma interface Web mas está rodando em sua maquina.
+| 
+|Você tem que verificar se o Pandas, NumPy, Matplotlib estão instalados.
+|  (Anaconda Navigator -> Home -> CMD.exe Prompt ->Launch)
+|  
+| os comandos no CMD são
+| 
+| pip install pandas 
+| pip install numpy 
+| pip install matplotlib
+| 
+| Se já estiver instalado irá aparecer a seguinte mensagem (Requirement already satisfied:)
+|
+| Todas as pastas/alterações que você fizer estará dentro da sua pasta usuario 
+|  (C:\Users\YourUser\FolderWithNameYouGave)
+|   esse e seu caminho para ter acesso 
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
