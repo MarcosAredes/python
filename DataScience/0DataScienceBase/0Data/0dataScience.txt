@@ -516,5 +516,85 @@ do contexto do seu código e dos seus requisitos.
 
 Adicionando Colunas: 
 
+Essa e a linha de codigo para criar uma coluna nova
 
+dados['total']
 
+Nova coluna com soma de Dados
+OU seja a coluna Total e a soma de outras colunas sendo:
+
+Total = Acceleration + SprintSpeed + Agility + Reactions
+
+dados['Total'] = dados['Acceleration'] + dados['SprintSpeed'] + dados['Agility'] + dados['Reactions']
+dados
+
+----------------------------------------------------------------------------------------------------------
+
+Exportando Dados:
+
+Quando for exportar dados com Python pode-se gerar em varios formatos sendo:
+
+***
+
+CSV (Comma Separated Values):
+
+dados.to_csv('file.csv', index=False)
+
+***
+
+Excel:
+
+df.to_excel('file.xlsx', index=False)
+
+***
+
+JSON (JavaScript Object Notation):
+
+df.to_json('file.json', orient='records')
+
+***
+
+HTML:
+
+df.to_html('file.html', index=False)
+
+***
+
+Parquet:
+
+df.to_parquet('file.parquet', index=False)
+
+***
+
+HDF5 (Hierarchical Data Format version 5):
+
+df.to_hdf('file.h5', key='data', mode='w')
+
+***
+
+Feather:
+
+df.to_feather('file.feather')
+
+***
+
+Msgpack:
+
+df.to_msgpack('file.msg', compress='zlib')
+
+***
+
+Stata:
+
+df.to_stata('file.dta', version=118)
+
+***
+
+SQL (Structured Query Language):
+
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///file.db')
+df.to_sql('table_name', con=engine, index=False)
+
+***
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

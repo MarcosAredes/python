@@ -1,0 +1,344 @@
+    ***Pandas***
+
+
+* Em todas as bibliotecas SEMPRE olha a documentação dela *
+
+Pandas (Com Python)
+
+Documentação do Pandas (https://pandas.pydata.org/docs/)
+
+O que é:
+
+Pandas é uma biblioteca de software escrita para a linguagem de programação Python para
+manipulação e análise de dados. Ela fornece estruturas de dados eficientes e fáceis de 
+usar, como o DataFrame, que é uma tabela bidimensional com rótulos em linhas e colunas. 
+O Pandas é amplamente utilizado em ciência de dados, análise financeira, estatísticas e
+outras áreas onde a manipulação de dados é uma parte essencial do processo.
+
+Algumas características principais do Pandas incluem:
+
+DataFrame: 
+Uma estrutura de dados tabular bidimensional com rótulos em linhas e colunas, 
+semelhante a uma planilha.
+
+Series: 
+Uma estrutura de dados unidimensional que pode armazenar qualquer tipo de dado.
+
+Operações de dados: 
+O Pandas oferece uma ampla variedade de funções e métodos para 
+realizar operações de manipulação, limpeza e análise de dados.
+
+Leitura e escrita de dados: 
+O Pandas suporta a leitura e escrita de dados em vários formatos, como CSV, Excel, 
+SQL, HDF5, e outros.
+
+Indexação sofisticada: 
+O Pandas permite indexar dados de maneiras complexas, facilitando a recuperação e 
+manipulação de informações específicas.
+
+O Pandas é uma ferramenta essencial em muitos projetos de ciência de dados e análise 
+de dados em Python devido à sua eficiência, flexibilidade e facilidade de uso.
+
+-----------------------------------------------------------------------------------------------------
+
+Abrindo aquivos com pandas:
+
+Para importar utiliza:
+import pandas as pd
+
+Se voce digitar pd.read_ tem varias variedade de arquivos para que se possa utilizar 
+para leitura.
+
+Aqui vão os pd.read_
+
+----------------------------------------------------------------------------------------
+
+pd.read_clipboard()
+
+Descrição: Lê o conteúdo da área de transferência e o converte em um DataFrame.
+
+          Code
+|-------------------------|
+|import pandas as pd      |
+|df = pd.read_clipboard() |
+|-------------------------|
+
+----------------------------------------------------------------------------------------
+
+pd.read_csv()
+
+Descrição: Lê um arquivo CSV (Comma Separated Values) em um DataFrame do pandas.
+
+           Code
+|------------------------------------|
+|import pandas as pd                 |
+|df = pd.read_csv('seu_arquivo.csv') |
+|------------------------------------|
+
+----------------------------------------------------------------------------------------
+
+pd.read_excel()
+
+Descrição: Lê um arquivo Excel em um DataFrame do pandas.
+
+          Code
+|--------------------------------------|
+|import pandas as pd                   | 
+|df = pd.read_excel('seu_arquivo.xlsx')|
+|--------------------------------------|
+
+-----------------------------------------------------------------------------------------
+
+pd.read_feather()
+
+Descrição: Lê um arquivo Feather em um DataFrame do pandas.
+
+          Code
+|--------------------------------------------|
+|import pandas as pd                         |
+|df = pd.read_feather('seu_arquivo.feather') |
+|--------------------------------------------|
+
+-----------------------------------------------------------------------------------------
+
+pd.read_fwf()
+
+Descrição: Lê um arquivo de largura fixa (Fixed Width Format) em um DataFrame do pandas
+
+          Code
+|--------------------------------------|
+|import pandas as pd                   | 
+|df = pd.read_fwf('seu_arquivo.txt')   |
+|--------------------------------------|
+
+-----------------------------------------------------------------------------------------
+
+pd.read_gbq()
+
+Descrição: Lê um conjunto de dados do Google BigQuery em um DataFrame do pandas.
+
+          Code
+|---------------------------------------------|
+|import pandas as pd                          |
+|project_id = 'seu-projeto-id'                |
+|sql = 'SELECT * FROM seu_dataset.sua_tabela' |
+|df = pd.read_gbq(sql, project_id=project_id) |
+|---------------------------------------------|
+
+------------------------------------------------------------------------------------------
+
+pd.read_hdf()
+
+Descrição: Lê um arquivo HDF5 em um DataFrame do pandas.
+
+          Code
+|-----------------------------------------------------|    
+|import pandas as pd                                  | 
+|df = pd.read_hdf('seu_arquivo.h5', 'nome_do_grupo')  |
+|-----------------------------------------------------|
+
+------------------------------------------------------------------------------------------
+
+pd.read_html()
+
+Descrição: Lê tabelas de uma página da web em um DataFrame do pandas.
+
+
+|----------------------------------------------------------------------------|
+|import pandas as pd                                                         |
+|url = 'https://exemplo.com/tabela.html'                                     |
+|df_list = pd.read_html(url)                                                 |
+|df = df_list[0]  # Assume que a tabela desejada é a primeira na página      |
+|----------------------------------------------------------------------------|
+
+------------------------------------------------------------------------------------------
+
+pd.read_json()
+
+Descrição: Lê um arquivo JSON (JavaScript Object Notation) em um DataFrame do pandas.
+
+
+|-----------------------------------------|
+|import pandas as pd                      |
+|df = pd.read_json('seu_arquivo.json')    |
+|-----------------------------------------|
+
+-------------------------------------------------------------------------------------------
+
+pd.read_parquet()
+
+Descrição: Lê um arquivo Parquet em um DataFrame do pandas.
+
+|----------------------------------------------|
+|import pandas as pd                           |
+|df = pd.read_parquet('seu_arquivo.parquet')   |
+|----------------------------------------------|
+
+-----------------------------------------------------------------------------------------------------------------
+
+Realizando a leitura desses dados:
+
+Você pode dentro do '(3)' ou '[0:4]' definir quantos você quer mostrar 
+basicamente você filtra a quantidade.
+No '[]' se você coloca [2,2] irá aparecer o segundo da lista e a segunda coluna.
+
+
+dados.head() 
+     Mostra apenas as 5 primeiras entradas(0 a 4)
+
+
+dados.tail()
+     Mostra apenas as 5 ultimas entradas(4 a 0)
+
+
+dados.columns
+     Irá mostrar as colunas
+     Nome | idade | Nacionalidade
+
+
+dados.index
+     Irá mostrar as linhas 
+     RangeIndex(start=0, stop=18207, step=1)
+     Ele começa no 0, para no 18207, e tem incrementos de 1 em 1
+
+
+dados['Name']
+     Puxa apenas dados da coluna name, e você pode puxar mais coisas também
+     dados[['Name', 'Age']] apenas adicionando como uma lista.
+
+
+dados.iloc[1]
+     Irá puxar apenas informações da primeira linha
+     Podendo variar ate onde vai puxar 
+     dados.iloc[0:4] vai exibir informações do 0, 1, 2, 3
+
+------------------------------------------------------------------------------------------------
+
+Utilizado a função Loc e Sorted
+
+Função loc:
+
+A função loc é uma função do pandas utilizada para selecionar e acessar um grupo de 
+linhas e colunas por rótulos ou uma condição booleana. É especialmente útil para a 
+indexação baseada em rótulos.
+
+
+|--------------------------------------------------------------------| 
+|import pandas as pd                                                 | 
+|                                                                    |
+|dados.loc[dados['Nationality'] == 'Brazil']                         | 
+|                                                                    |      
+|--------------------------------------------------------------------|
+|import pandas as pd                                                 | 
+|                                                                    |
+|dados.loc[dados['Age'] == 21]                                       |                                     | 
+|                                                                    | 
+|--------------------------------------------------------------------|
+
+
+Função sorted:
+
+A função sorted em Python é utilizada para ordenar iteráveis (listas, tuplas, etc.) 
+em ordem ascendente ou descendente.
+
+
+|--------------------------------------------------------------|    
+|dados.sort_values('Age')                                      |
+| Vai colocar do menor para o maior                            |
+|                                                              | 
+|dados.sort_values('Age', ascending = False)                   |  
+| Vai colocar do maior para o menor                            | 
+|                                                              |            
+|--------------------------------------------------------------|
+
+Ambas as funções são ferramentas poderosas em Python, sendo a 'loc' útil para seleção 
+de dados em DataFrames usando rótulos e condições, enquanto a 'sorted' é fundamental
+para ordenar iteráveis. Lembre-se de que o uso específico dessas funções dependerá 
+do contexto do seu código e dos seus requisitos.
+
+----------------------------------------------------------------------------------------------------
+
+Adicionando Colunas: 
+
+Essa e a linha de codigo para criar uma coluna nova
+
+dados['total']
+
+Nova coluna com soma de Dados
+OU seja a coluna Total e a soma de outras colunas sendo:
+
+Total = Acceleration + SprintSpeed + Agility + Reactions
+
+dados['Total'] = dados['Acceleration'] + dados['SprintSpeed'] + dados['Agility'] + dados['Reactions']
+dados
+
+----------------------------------------------------------------------------------------------------------
+
+Exportando Dados:
+
+Quando for exportar dados com Python pode-se gerar em varios formatos sendo:
+
+***
+
+CSV (Comma Separated Values):
+
+dados.to_csv('file.csv', index=False)
+
+***
+
+Excel:
+
+df.to_excel('file.xlsx', index=False)
+
+***
+
+JSON (JavaScript Object Notation):
+
+df.to_json('file.json', orient='records')
+
+***
+
+HTML:
+
+df.to_html('file.html', index=False)
+
+***
+
+Parquet:
+
+df.to_parquet('file.parquet', index=False)
+
+***
+
+HDF5 (Hierarchical Data Format version 5):
+
+df.to_hdf('file.h5', key='data', mode='w')
+
+***
+
+Feather:
+
+df.to_feather('file.feather')
+
+***
+
+Msgpack:
+
+df.to_msgpack('file.msg', compress='zlib')
+
+***
+
+Stata:
+
+df.to_stata('file.dta', version=118)
+
+***
+
+SQL (Structured Query Language):
+
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///file.db')
+df.to_sql('table_name', con=engine, index=False)
+
+***
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
