@@ -1,1 +1,20 @@
-Filtrando dados com condições
+Filtrando dados com condições:
+
+Quando voce vai filtrar condições não utiliza-se for, in, if
+Ex:
+
+# Lista de números
+numeros = [1, 7, 3, 10, 4, 6, 8]
+
+# Filtrando números maiores que 5
+numeros_filtrados = [numero for numero in numeros if numero > 5]
+
+# Exibindo o resultado
+print(numeros_filtrados)
+
+Utiliza desta maneira utilizando os sinais para poder indicar
+
+import pandas as pd
+df = pd.read_csv('House.csv')
+filter1 =  df.loc[df['Rooms'] == 3 & (df['Type'] == 'h')]
+filter1
