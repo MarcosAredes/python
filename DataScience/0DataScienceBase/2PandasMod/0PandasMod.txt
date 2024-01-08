@@ -18,3 +18,65 @@ import pandas as pd
 df = pd.read_csv('House.csv')
 filter1 =  df.loc[df['Rooms'] == 3 & (df['Type'] == 'h')]
 filter1
+
+-----------------------------------------------------------------------------
+
+Regular Expression:
+
+Expressões regulares, ou regex, são padrões de busca de texto que 
+permitem a você corresponder, localizar ou substituir strings de 
+maneira flexível e poderosa. No contexto do código que você forneceu,
+a expressão regular está sendo usada na função str.contains do pandas
+para procurar padrões específicos na coluna 'Address'.
+
+Turner st: Isso corresponde à sequência literal 'Turner st'.
+
+|: É um operador de alternância que significa "ou". Portanto, a expressão regular 
+corresponde a 'Turner st' OU 'Turner Rd'.
+
+Turner Rd: Isso corresponde à sequência literal 'Turner Rd'.
+O parâmetro flags=re.I é usado para tornar a correspondência de padrões insensível a 
+maiúsculas e minúsculas, ou seja, ele faz com que a busca seja case-insensitive.
+
+Aqui estão alguns detalhes adicionais sobre os elementos usados na expressão regular:
+
+|: Operador de alternância (ou).
+re.I: Flag que torna a correspondência insensível a maiúsculas e minúsculas (ignore case).
+
+filter2 = df.loc[df['Address'].str.contains('Turner st|Turner Rd', flags=re.I)]
+filter2
+
+-----------------------------------------------------------------------------------------------------
+
+Filtrando com Regx e Conditions:
+
+regex_pattern é a expressão regular que busca 'Turner st' ou 'Turner Rd'.
+
+condition é a condição adicional que a coluna 'Value' deve ser maior que 100.
+
+df['Address'].str.contains(regex_pattern, flags=re.I) & condition cria uma máscara booleana combinando a busca por padrões com a condição adicional usando o operador lógico & (AND).
+
+df.loc[...] filtra o DataFrame com base na máscara booleana.
+
+filter3 = df.loc[df['Address'].str.contains('^59', flags=re.I) & (df['Price']<= 500000)]
+filter3
+
+---------------------------------------------------------------------------------------------------------
+
+Modificando Dados:
+
+df.loc[df['SellerG'] == 'Chico Bento', 'SellerG'] = 'Chico Bento'
+
+df.loc[df['SellerG'] == 'Chico Bento', ['Method']] = 'Pending'
+
+df
+
+-----------------------------------------------------------------------------------------------------------
+
+Agrupando dados com groupby:
+
+A função groupby no pandas é usada para agrupar dados com base em valores de uma ou 
+mais colunas. Após agrupar os dados, você pode aplicar várias operações, como contar,
+calcular médias, ou realizar outras análises nas subgrupos criados. 
+
+
