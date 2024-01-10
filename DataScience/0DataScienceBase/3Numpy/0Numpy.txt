@@ -1,1 +1,22 @@
 Numpy:
+
+Numpy trabalha com arrays uma forma muito mais organizada de listas tendo lista de 
+1D Uma dimensão 2D Duas dimensões é 3D Três dimensões
+
+Você tem que importar o Numpy sendo 
+
+import numpy as np
+O np no final e para quando for usar o numpy 
+
+lista basica com numpy para comparar o uso de memoria(lembrando que é em bytes).
+
+a = [1,2,3,4,5]
+b = np.array([1,2,3,4,5])
+
+print(a)
+print(b)
+
+[1, 2, 3, 4, 5] (96 bytes)
+[1 2 3 4 5] (20 bytes)
+
+
