@@ -3,10 +3,15 @@ Numpy:
 Numpy trabalha com arrays uma forma muito mais organizada de listas tendo lista de 
 1D Uma dimensão 2D Duas dimensões é 3D Três dimensões
 
+
+--------------------------------------------------
 Você tem que importar o Numpy sendo 
 
 import numpy as np
 O np no final e para quando for usar o numpy 
+--------------------------------------------------------
+
+---------------------------------------------------------------------------------------
 
 lista basica com numpy para comparar o uso de memoria(lembrando que é em bytes).
 
@@ -18,5 +23,134 @@ print(b)
 
 [1, 2, 3, 4, 5] (96 bytes)
 [1 2 3 4 5] (20 bytes)
+
+-----------------------------------------------------------------------------------------
+
+Arrays:
+
+Array 1D (Array unidimensional):
+
+° É uma coleção linear de elementos.
+° Cada elemento é acessado por um índice único.
+° Pode ser chamado de vetor.
+ 
+# Array 1D
+
+d1 = np.array([1,2,3])
+print(d1)
+
+Resultado: [1 2 3]
+
+d1.ndim(ndim significa number dimension)
+Resultado: 1 
+
+
+
+
+------------------------------------------------------------------------------------------
+
+Array 2D (Array bidimensional):
+
+° É uma tabela retangular de elementos organizados em linhas e colunas.
+° Cada elemento é acessado por dois índices: um para a linha e outro para a coluna.
+° Pode ser chamado de matriz.
+
+# Array 2D
+
+d2 = np.array([[1,2,3], [4,5,6]])
+print(d2)
+
+Resultado:[[1 2 3]
+          [4 5 6]]
+
+
+d2.ndim (ndim significa number dimension)
+Resultado: 2
+
+
+
+--------------------------------------------------------------------------------------------------------
+Array 3D (Array tridimensional):
+
+° É uma estrutura de dados que contém elementos organizados em cubos, onde cada cubo possui linhas, colunas e profundidade.
+° Cada elemento é acessado por três índices: um para a linha, um para a coluna e outro para a profundidade.
+° Pode ser chamado de cubo tridimensional.
+
+
+# Array 3D
+        NA 3D VOCÊ COLOCA UMA ARRAY DENTRO DA OUTRA
+d3 = np.array([[[1,2], [3,4]], [[5,6], [7,8]]])
+print(d3)
+
+Resultado: [[[1 2]
+            [3 4]]
+
+            [[5 6]
+             [7 8]]]
+
+d3.ndim
+
+Resultado: 3
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+Somando duas arrays:
+
+Modo normal do python
+
+A = [2, 3, 4]
+B = [2, 3, 4]
+
+result = A + B
+result
+
+[2, 3, 4, 2, 3, 4]
+
+
+A = np.array([2, 3, 4])
+B = np.array([2, 3, 4])
+
+result = np.add(A,B)
+print(result)
+
+[4 6 8]
+
+----------------------------------------------------------------------------------------------------------------------
+
+Selecionando itens em arrays:
+
+Nome da array[row,colun]
+
+C = np.array([[2, 4, 6, 8], [1, 3, 5, 7]])
+print(C)
+    0 1 2 3
+0 [[2 4 6 8] 
+1  [1 3 5 7]]
+
+C[0,3]
+8
+
+funciona ao contrario também se caso a array for muito grande
+
+    0 -3 -2 -1
+0 [[2 4 6 8] 
+1  [1 3 5 7]]
+
+C[0,-1]
+8
+
+Caso queira mostrar todas as colunas
+
+C[1,:]
+
+([1, 3, 5, 7])
+
+Caso queira mostrar todas as linhas
+
+C[:,1]
+
+([4, 3])
+-------------------------------------------------------------------------------------------------------------------------------------
 
 
