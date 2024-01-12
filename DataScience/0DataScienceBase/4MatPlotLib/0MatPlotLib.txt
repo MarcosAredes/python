@@ -1,0 +1,22 @@
+Matplotlib é uma biblioteca de software para criação de gráficos e 
+visualizações de dados em geral, feita para e da linguagem de 
+programação Python e sua extensão de matemática NumPy.
+
+|-----------------------------------------------------------------------------------------|
+| Documentação:                                                                           | 
+|                                                                                         |                  
+| https://matplotlib.org/stable/index.html                                                |  
+|                                                                                         |      
+|                                                                                         |                  
+| Graficos/Modificações dos graficos e seus tipos:                                        |  
+|                                                                                         |      
+| https://matplotlib.org/cheatsheets/_images/cheatsheets-1.png                            |  
+|                                                                                         |              
+| https://matplotlib.org/cheatsheets/_images/handout-beginner.png                         |  
+|                                                                                         |                          
+| https://matplotlib.org/cheatsheets/_images/handout-intermediate.png                     |  
+|                                                                                         |                                                         
+| https://matplotlib.org/cheatsheets/_images/handout-tips.png                             |      
+|                                                                                         |      
+|-----------------------------------------------------------------------------------------|
+
