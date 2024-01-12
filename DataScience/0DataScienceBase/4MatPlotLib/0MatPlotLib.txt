@@ -20,3 +20,156 @@ programação Python e sua extensão de matemática NumPy.
 |                                                                                         |      
 |-----------------------------------------------------------------------------------------|
 
+
+Bibliotecas importantes
+
+
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+import numpy as np
+import pandas as pd
+
+
+Importando o arquivo csv
+gas = pd.read_csv('gas_prices.csv')
+gas
+
+Primeiro grafico 
+
+plt.plot(gas['Year'], gas[ 'USA'])
+plt.plot(gas['Year'], gas[ 'UK'])
+plt.plot(gas['Year'], gas[ 'Italy'])
+plt.plot(gas['Year'], gas[ 'Mexico'])
+
+plt.show() # O plt.show mostra o grafico, não irá gerar grafico sem ele
+
+--------------------------------------------
+
+Adicionando legendas e ticks
+
+Para adicionar o titulo e simplesmente 
+
+plt.title('TITULU')
+
+Para adicionar as legendas primeiro adicinar a label depois manda imprimir a legendas
+
+plt.plot(gas['Year'], gas[ 'USA'], label = 'USA')
+
+plt.legend()
+
+Ex:
+(Titulo)
+plt.title('Valores da gasolina de 1990 até 2008')
+
+                                    (label)
+plt.plot(gas['Year'], gas[ 'USA'], label = 'USA')
+plt.plot(gas['Year'], gas[ 'UK'], label = 'UK')
+plt.plot(gas['Year'], gas[ 'Italy'], label = 'Italy')
+plt.plot(gas['Year'], gas[ 'Mexico'], label = 'Mexico')
+
+    (Imprimindo a legenda)
+plt.legend()
+plt.show()
+
+-----------------------------------------------------------------------------------------------------------
+
+Eixo X e Y
+
+  |
+  |
+  | 
+Y |
+  |
+  |
+  |-----------------|
+          X
+
+
+Para modificar o eixo X para adicionar mais anos
+
+plt.xticks(gas['Year'] [:: 2])
+
+Para modificar o eixo Y e quase a mesma coisa
+
+plt.yticks()
+
+----***----***----
+
+Para adicionar legendas nos eixo e simples
+
+plt.xlabel('Anos')
+plt.ylabel('Valor em Dolar')
+
+----***----***----
+
+Cores
+                                    (cor o 'r' significa a cor no caso Vermelho o '.' e o delimitador e os '--' e o tipo da linha)
+plt.plot(gas['Year'], gas[ 'Mexico'],'r.--' ,label = 'Mexico')
+
+Com cores e linhas modificadas
+
+#Titulo
+plt.title('Valores da gasolina de 1990 até 2008')
+
+#Paises e legendas e cores
+plt.plot(gas['Year'], gas[ 'USA'], 'b.--' ,label = 'USA')
+plt.plot(gas['Year'], gas[ 'UK'], 'y.-' ,label = 'UK')
+plt.plot(gas['Year'], gas[ 'Italy'], 'g.--' ,label = 'Italy')
+plt.plot(gas['Year'], gas[ 'Mexico'], 'm.-' ,label = 'Mexico')
+plt.plot(gas['Year'], gas[ 'Japan'], 'r.--' ,label = 'Japan')
+
+#Eixos
+plt.xticks(gas['Year'] [:: 2])
+
+plt.xlabel('Anos')
+plt.ylabel('Valor em Dolar US$')
+
+#Imprimindo grafico e legenda
+plt.legend()
+plt.show()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Adicionando com for loop
+
+Outro formato para o mesmo resultado
+
+
+#Titulo
+plt.title('Valores da gasolina de 1990 até 2008')
+
+#Paises e legendas e cores
+list_pais = ['USA', 'UK', 'Italy', 'Mexico', 'Japan'] # se quiser mais algum país só adicinar aqui 
+for pais in gas:
+    if pais in list_pais: 
+        plt.plot(gas['Year'], gas[pais], label=[pais], marker='.')
+#Eixos
+plt.xticks(gas['Year'] [:: 2])
+
+plt.xlabel('Anos')
+plt.ylabel('Valor em Dolar US$')
+
+#Imprimindo grafico e legenda
+plt.legend()
+plt.show()
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Salvando grafico
+
+plt.savefig() é usada para salvar a figura gerada pelo Matplotlib em um arquivo. 
+
+° 'nome_do_arquivo.png': Substitua isso pelo caminho e nome do arquivo desejado. 
+Pode ser um caminho absoluto ou relativo ao diretório de trabalho.
+
+° format='png': Especifica o formato do arquivo de saída. Pode ser PNG, JPG, PDF, 
+SVG, entre outros.
+
+° dpi=300: Determina a resolução da imagem em pontos por polegada (dots per inch). 
+Ajuste conforme necessário
+
+
+Este comando deve ser chamado antes de plt.show(), pois plt.show() exibe a figura, 
+e depois disso, você não poderá salvar a imagem. Se você chamar plt.savefig() após 
+plt.show(), salvará uma imagem em branco.
