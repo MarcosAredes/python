@@ -1,0 +1,1 @@
+Monitorador de recursos do computador basico só para treinar

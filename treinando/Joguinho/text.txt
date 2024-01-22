@@ -1,0 +1,3 @@
+Jogo de ping pong criado com a importção da biblioteca pygame
+
+jogo basico só para praticar e ficar brincando com codigo
