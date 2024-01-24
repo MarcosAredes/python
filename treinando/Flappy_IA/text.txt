@@ -1,0 +1,13 @@
+1°  'Criar' uma replica do Flappy Bird com a biblioteca pygames!
+
+2°   Criar uma IA que vai aprender jogar o jogo, ir evoluindo até se tornar
+imortal!
+
+
+
+OBS: uma versão da hashtag Programação só q piorada pq ainda estou
+estudando apenas com intuito de praticar.
+
+
+
+A cada gen A IA vai evolir para ficar melhor ate zerar o jogo
