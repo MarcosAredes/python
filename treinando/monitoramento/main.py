@@ -145,3 +145,4 @@ if __name__ == "__main__":
     view_ram_info()
     view_hd_info()
     app.mainloop()
+
