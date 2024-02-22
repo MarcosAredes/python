@@ -1,0 +1,4 @@
+---------------------------------------------------------------------------------
+
+Local para download: http://www.r-project.org Ou pelo anaconda
+
