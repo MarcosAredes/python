@@ -99,16 +99,14 @@ IDEs
     escolhida e dos recursos específicos que você precisa para o seu projeto.
 
 OBS:
-     Vou falar de Python e R 
+    Só Python
 
 ------------------------------------------------------------------------------------------------------------------------------
-
-R:
-    Vá para o arquivo:
-            Python/Machine_Learning/Introdução_ao_R/R.txt
+Caso não sabe nada ou esqueceu
 
 Python:
     Vá para o arquivo:
             Python/Aprendendo_Python
 
 ---------------------------------------------------------------------------------------------------------------------------------
+
