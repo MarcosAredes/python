@@ -224,6 +224,54 @@ Python caso o animal não for até a pasta (fdp!)
        ° or - ou 
        ° not - não
     
-    °
+- Estruturas de Repetição:
 
--
+    ° Muitas vezes estruturas de código tem que ser repetidas
+
+    ° Em muitos casos, estas repetições são definidas dinamicamente
+    (Input do usuário).
+
+    ° Dois tipos Principais
+        
+        °   Enquanto (While): Executa um bloco de código enquanto uma 
+            condição específica for verdadeira. É útil quando o 
+            número de repetições não é conhecido antecipadamente.
+        
+        °   Para (For): Executa um bloco de código um número 
+            específico de vezes ou itera sobre uma sequência de elementos. 
+            É comumente usado quando o número de repetições é conhecido antecipadamente.
+    
+    ° No python e While e o For são loops
+        
+        ° While
+            count = 1
+            whinle count <= 5 :
+                print(count)
+                count += 1
+
+                (Enquanto for menor do que 5 será adicionado 1)
+        
+        ° For 
+            ° O for provavelmente você vai utilizar com range que seria o numero de repetições
+                for x in range(0, 10):
+                Vai repetir o x 10 vezes ou 20 se você quiser
+            
+            ° range (0, 10, 1):
+                #range (Inicio, parada, incremento);
+                O incremento pode ser negativo.
+            
+            ° break
+                # cancela o loop
+            
+            ° continue
+                # reinicia o loop
+            
+- Lista
+    
+    ° Vetor de Valores
+    
+    ° Dados não precisam ser do mesmo tipos
+
+    
+
+
