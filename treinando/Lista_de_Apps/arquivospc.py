@@ -10,10 +10,22 @@ import os
 import pyarrow as pa
 import pyarrow.parquet as pq
 import openpyxl
+import ctypes
+
+def is_hidden_file(filepath):
+    try:
+        # Obter atributos do arquivo
+        attrs = ctypes.windll.kernel32.GetFileAttributesW(filepath)
+        # Verificar se o bit de arquivo oculto está ativado
+        return attrs & 2
+    except Exception as e:
+        print(f"Erro ao verificar arquivo oculto: {e}")
+        return False
 
 def listar_programas(install=True, filtro_data=None, filtro_nome=None):
     resultado_listbox.delete(0, tk.END)  # Limpar a lista antes de listar novamente
     if install:
+        # Listar programas instalados
         programas_instalados = winapps.list_installed()
         if filtro_data:
             programas_instalados = [programa for programa in programas_instalados if programa.install_date == filtro_data]
@@ -28,6 +40,18 @@ def listar_programas(install=True, filtro_data=None, filtro_nome=None):
                                               f'Local de desinstalação: {programa.uninstall_string}\n'
                                               f'Tamanho em disco: {obter_tamanho_disco(programa.install_location)}\n'
                                               f'{"_" * 30}\n')
+
+        # Obter o diretório de instalação de programas
+        programas_dir = os.environ.get('PROGRAMFILES')
+        if not programas_dir:
+            messagebox.showerror("Erro", "Não foi possível obter o diretório de instalação de programas.")
+            return
+
+        # Listar todos os arquivos
+        with os.scandir(programas_dir) as entries:
+            for entry in entries:
+                if entry.is_file() and not entry.name.startswith('.') and not is_hidden_file(entry.path):
+                    resultado_listbox.insert(tk.END, entry.name)
     else:
         resultado_listbox.insert(tk.END, "A listagem de programas está desativada.\n")
 
