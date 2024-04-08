@@ -7,7 +7,7 @@ class MedidorRPM:
 
     def medir_rpm(self):
         # Simulação: gera um número aleatório como RPM
-        self.rpm = random.randint(800, 4000)
+        self.rpm = random.randint(800, 7000)
 
     def exibir_informacoes(self):
         print(f"RPM: {self.rpm}")
