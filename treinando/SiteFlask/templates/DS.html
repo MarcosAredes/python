@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Data Science</title>
+</head>
+
+<body>
+    <div class="Menu">
+        <h1>Data Science</h1>
+        <button onclick="toggleList()">
+            <img width="25" height="25"
+                src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/external-data-science-data-analytics-flaticons-flat-circular-flat-icons.png"
+                alt="external-data-science-data-analytics-flaticons-flat-circular-flat-icons" />
+        </button>
+        <ul id="minhaLista" class="hidden">
+            <li>
+                <button>
+                    <a href="#processo"> processo </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#plataforma"> plataforma </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Dados"> Dados </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Biblioteca"> Biblioteca </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#pandas"> Pandas </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Leitura"> Leitura de Dados </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Loc/Sorted"> Loc/Sorted </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Colunas"> Colunas </a>
+                </button>
+            </li>
+
+
+
+
+
+
+
+
+
+            <li>
+                <button>
+                    <a href="#Links"> Links </a>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="Oqé">
+            <h2>
+                O que e Data Science(Ciência de dados):
+            </h2>
+            <p>
+                Data Science é uma disciplina multidisciplinar que envolve a
+                extração de informações úteis e insights a partir de dados.
+                Ela combina conhecimentos de estatística, matemática, programação,
+                ciência da computação e domínio do assunto para analisar conjuntos
+                de dados complexos.
+            </p>
+
+
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="processo">
+            <a name="processo"></a>
+            <h3>
+                O processo de Data Science geralmente envolve as seguintes etapas:
+            </h3>
+
+            <p>
+                <b>1°</b>Coleta de Dados:<br>
+                Obtenção de dados relevantes para o problema em questão. Os dados
+                podem ser estruturados (como tabelas em bancos de dados) ou não
+                estruturados (como texto, imagens ou áudio).
+
+                <br>
+                <br>
+
+                <b>2°</b>Limpeza de Dados: <br>
+                Trata-se de lidar com dados ausentes, inconsistentes ou incorretos.
+                Isso inclui a remoção de outliers e a normalização de dados.
+
+                <br>
+                <br>
+
+                <b>3°</b>Exploração de Dados (EDA): <br>
+                Compreensão inicial dos dados por meio de estatísticas descritivas, visualizações e
+                outras técnicas exploratórias. O EDA ajuda a identificar padrões, tendências e relações
+                nos dados.
+
+                <br>
+                <br>
+
+                <b>4°</b>Preparação de Dados: <br>
+                Transformação dos dados em um formato adequado para análise. Isso pode envolver a
+                criação de features (variáveis) adicionais, codificação de variáveis categóricas,
+                normalização, etc.
+
+                <br>
+                <br>
+
+                <b>5°</b>Modelagem: <br>
+                Desenvolvimento de modelos estatísticos ou algoritmos de machine learning para fazer
+                previsões ou tomar decisões com base nos dados.
+
+                <br>
+                <br>
+
+                <b>6°</b>Avaliação do Modelo: <br>
+                Avaliação do desempenho do modelo em dados não vistos. Isso ajuda a garantir que o
+                modelo seja capaz de generalizar bem para novos dados.
+
+                <br>
+                <br>
+
+                <b>7°</b> Interpretação e Comunicação dos Resultados: <br>
+                Compreensão dos resultados obtidos e comunicação desses resultados de maneira clara e
+                compreensível para as partes interessadas.
+
+                <br>
+                <br>
+
+                <b>8°</b>Iteração: <br>
+                Com base nos resultados e nas necessidades do projeto, o cientista de dados pode iterar
+                em várias etapas do processo para melhorar a qualidade dos resultados.
+
+                <br>
+                <br>
+
+                Data Science é amplamente aplicada em diversas áreas, incluindo finanças, saúde,
+                marketing, ciências sociais, entre outras. A análise de grandes conjuntos de dados
+                permite identificar padrões e tendências que podem levar a uma tomada de decisão mais
+                informada e à resolução de problemas complexos.
+
+
+
+
+
+            </p>
+
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="plataforma">
+            <a name="plataforma"></a>
+
+            <h3>Plataforma</h3>
+            <p>
+            <ul>
+                Primeiro ter o Python instalado
+                <br>
+                Segundo escolher a IDE
+                <br>
+                Terceiro intalar as bibliotecas
+            </ul>
+            Podemos achar tudo isso dentro do pacote 'Anaconda'
+            <a href="https://www.anaconda.com/download ">https://www.anaconda.com/download </a>
+            <br>
+            <br>
+            <b> Algumas bibliotecas:</b>
+
+            O Anaconda e aconselhado pois já vem com +ou- 8.000 pacotes para data science e
+            machine learning e ainda e open-source
+            <br>
+            <br>
+            Anaconda (python):
+
+            <br>
+
+            Plataforma de distribuição para ciência de dados com python.
+
+            <br>
+            Simplifica o gerenciamento e implantação de pacotes.
+
+            <br>
+            <br>
+
+            NumPy ---> Computação matemática com Python.
+            <br>
+            Pandas ---> Manipulação e análise de dados. Trabalha em conjunto com Numpy.
+            <br>
+            Scikit learn ---> Aprendizado de máquina (machine learning) em python.
+            <br>
+            Matplotlib ---> Criação de gráficos e visualização de dados em geral.
+            <br>
+            Seaborn ---> Visualização de dados baseado no matplotlib.
+            <br>
+            Fornece interface de alto nível para desenhar graficos estatísticos atraentes e informativos.
+            <br>
+            plotly ---> Criação de gráficos e visualização de dados de forma interativa, com interface de alto nível.
+            <br>
+            TensorFlow ---> Biblioteca de código aberto. Desenvolvido pela Google Brain Team para aprendizado de máquina
+            e pesquisa de redes neurais profundas.
+            <br>
+            Keras deep learning library ---> biblioteca rede neural de código aberto. roda em cima do tensor TensorFlow
+            <br>
+            SciPy ---> É uma biblioteca baseado em Python, de código aberto, para matemática, ciências e engenharia.
+            <br>
+            <br>
+
+            <b>Depois de instalar o Anaconda:</b>
+
+            <br>
+            <br>
+            Depois de intalar o "Anaconda" você abre o Anaconda Navigator
+            dentro do anaconda navigator temos 4 paginas.
+            <br>
+            <br>
+            sempre reiniciar a maquina depois de instalar alguma coisa.
+            <br>
+            <br>
+            Home -> Onde mostra algumas coisas que você tem instalado e que pode ser instalado
+            <br>
+            <br>
+            Enveronments -> Como se fosse uma instancia dentro do sistema operacional que tem o
+            primeiro enveronments que chama 'base' e dentro de base temos intalados todos os packages
+            python... voce pode ter varios e ir pulando entre eles
+            <br>
+            <br>
+            Learning -> A parte onde contem documentação para ler e trinar
+            <br>
+            <br>
+            Community -> Você pode encotrar pessos que estão trabalhando em projetos com você ou similares
+            <br>
+            <br>
+
+            <b>JupyterLab: </b>
+            <br>
+
+            Você vai achar ele no Anaconda Navigator na Home so clicar em launch pronto <br>
+            (Anaconda Navigator -> Home -> JupyterLab ->Launch). <br>
+            OBS: se o JupyterLab estiver com o botão de install ele vai pedir para instalar o
+            node.js(instala pelo Google) e depois instala o JupyterLab.
+
+            <br>
+            <br>
+
+            O JupyterLab e uma interface Web mas está rodando em sua maquina.
+
+            <br>
+
+            Você tem que verificar se o Pandas, NumPy, Matplotlib estão instalados. <br>
+            (Anaconda Navigator -> Home -> CMD.exe Prompt ->Launch)
+
+            <br>
+            <br>
+
+            <b> Os comandos no CMD são:</b>
+
+            <br>
+
+            pip install pandas <br>
+            pip install numpy <br>
+            pip install matplotlib
+
+            <br>
+            <br>
+
+            Se já estiver instalado irá aparecer a seguinte mensagem (Requirement already satisfied:)
+
+            <br>
+
+            Todas as pastas/alterações que você fizer estará dentro da sua pasta usuario
+            <br>
+            (C:\Users\YourUser\FolderWithNameYouGave)
+            <br>
+            esse e seu caminho para ter acesso
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Dados">
+            <a name="Dados"></a>
+
+            <h3>Dados</h3>
+
+            <p>
+
+                Em ciência de dados, o termo "dado" refere-se a informações ou fatos que podem ser
+                coletados, armazenados e analisados. Os dados são a matéria-prima fundamental para os
+                cientistas de dados, pois são a base para a obtenção de insights, tomada de decisões e
+                construção de modelos preditivos. Aqui estão alguns conceitos importantes relacionados a
+                dados em ciência de dados:
+
+                <br>
+
+                <b>Tipos de Dados:</b>
+
+            <ul>Dado Estruturado: Dados organizados em tabelas ou formatos tabulares, como bancos de
+                dados relacionais.
+
+                <br>
+                <br>
+
+                Dado Não Estruturado: Dados que não têm uma estrutura fixa, como texto não formatado,
+                imagens, áudio e vídeo.
+
+                <br>
+                <br>
+
+                Dado Semiestruturado: Dados que não se encaixam completamente em um formato estruturado,
+                mas têm alguma estrutura, como documentos XML ou JSON.
+
+            </ul>
+
+            <b>Fontes de Dados:</b>
+
+            <ul>
+                Dado Primário: Dados coletados diretamente de fontes originais por meio de experimentos,
+                pesquisas ou observações.
+
+                <br>
+                <br>
+
+                Dado Secundário: Dados que foram coletados por outra pessoa ou organização para propósitos
+                diferentes dos seus, mas que podem ser relevantes para a sua análise.
+            </ul>
+
+            <b>Processamento de Dados:</b>
+
+            <ul>
+                Limpeza de Dados: Remoção de valores ausentes, tratamento de outliers e correção de
+                erros nos dados para garantir qualidade.
+
+                <br>
+                <br>
+
+                Transformação de Dados: Conversão de dados em um formato mais adequado para análise,
+                como normalização ou codificação de variáveis.
+            </ul>
+
+            <b>Medidas Estatísticas:</b>
+
+            <ul>Média: Valor médio de um conjunto de dados.
+
+                <br>
+                <br>
+
+                Mediana: Valor do meio em um conjunto ordenado de dados.
+
+                <br>
+                <br>
+
+                Desvio Padrão: Medida de dispersão que indica quão espalhados estão os valores em torno
+                da média
+            </ul>
+
+            <b>Visualização de Dados:</b>
+            <ul>
+                Gráficos: Representações visuais dos dados, como histogramas, gráficos de dispersão e box plots.
+
+                <br>
+                <br>
+
+                Dashboards: Painéis interativos que consolidam informações importantes de forma visual.
+
+            </ul>
+
+            <b>Aprendizado de Máquina:</b>
+            <ul>
+                Treinamento de Modelo: Utilização de dados para ensinar um algoritmo a fazer previsões
+                ou tomar decisões.
+
+                <br>
+                <br>
+
+                Conjunto de Treinamento e Teste: Divisão dos dados em partes para treinar o modelo e
+                testar sua performance
+
+            </ul>
+
+            <b>Privacidade e Ética:</b>
+
+            <ul>Privacidade dos Dados: Garantir que os dados sejam tratados de maneira ética e que a
+                privacidade das pessoas seja preservada.
+
+                <br>
+                <br>
+
+                Bias nos Dados: Viés que pode surgir devido a desigualdades nos dados, levando a
+                resultados injustos.
+            </ul>
+
+            Em resumo, os dados desempenham um papel crucial em todas as fases do processo de
+            ciência de dados, desde a coleta até a interpretação dos resultados. A qualidade,
+            integridade e relevância dos dados são fundamentais para garantir análises e tomadas
+            de decisão precisas e confiáveis.
+
+            <br>
+            <br>
+
+            Caso precise de alguns dados para criar projeto pessoal <a
+                href="https://www.kaggle.com">https://www.kaggle.com </a>esse
+            site tem varios "dados" para voce fazer projetos pessoais
+            No site tem muita coisa sobre Data Science e Machine Learning
+
+            </p>
+
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Biblioteca">
+            <a name="Biblioteca"></a>
+
+            <h3>Bibliotecas</h3>
+            <p>
+                Em todas as bibliotecas SEMPRE olha a documentação dela
+                <br>
+                <br>
+                Pandas (Com Python)
+                <br>
+
+                Documentação do Pandas <a href="https://pandas.pydata.org/docs/">https://pandas.pydata.org/docs/</a>
+
+                <br>
+                <br>
+
+                <b>O que é:</b>
+
+                <br>
+                <br>
+                Pandas é uma biblioteca de software escrita para a linguagem de programação Python para
+                manipulação e análise de dados. Ela fornece estruturas de dados eficientes e fáceis de
+                usar, como o DataFrame, que é uma tabela bidimensional com rótulos em linhas e colunas.
+                O Pandas é amplamente utilizado em ciência de dados, análise financeira, estatísticas e
+                outras áreas onde a manipulação de dados é uma parte essencial do processo.
+                <br>
+                <br>
+                <b>Algumas características principais do Pandas incluem:</b>
+
+                <br>
+                <br>
+
+                <b>DataFrame:</b>
+            <ul>
+                Uma estrutura de dados tabular bidimensional com rótulos em linhas e colunas,
+                semelhante a uma planilha.
+            </ul>
+
+            <b>Series:</b>
+
+            <ul>
+                Uma estrutura de dados unidimensional que pode armazenar qualquer tipo de dado.
+            </ul>
+
+            <b>Operações de dados: </b>
+            <ul>O Pandas oferece uma ampla variedade de funções e métodos para
+                realizar operações de manipulação, limpeza e análise de dados.
+            </ul>
+
+            <b>Leitura e escrita de dados:</b>
+            <ul>
+                O Pandas suporta a leitura e escrita de dados em vários formatos, como CSV, Excel,
+                SQL, HDF5, e outros.
+            </ul>
+
+            <b>Indexação sofisticada:</b>
+            <ul>O Pandas permite indexar dados de maneiras complexas, facilitando a recuperação e
+                manipulação de informações específicas.
+            </ul>
+
+            <br>
+
+            O Pandas é uma ferramenta essencial em muitos projetos de ciência de dados e análise
+            de dados em Python devido à sua eficiência, flexibilidade e facilidade de uso.
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Pandas">
+            <a name="pandas"></a>
+
+            <h3>Pandas</h3>
+
+            <p>
+                <b> Abrindo aquivos com pandas:</b>
+
+                <br>
+
+                Para importar utiliza:
+
+                <br>
+
+                import pandas as pd
+
+                <br>
+
+                Se voce digitar pd.read_ tem varias variedade de arquivos para que se possa utilizar
+                para leitura.
+
+                <br>
+                <br>
+
+                <b> Aqui vão os pd.read_:</b>
+
+                <br>
+                <br>
+
+                <b>pd.read_clipboard()</b>
+            <ul>Descrição: Lê o conteúdo da área de transferência e o converte em um DataFrame.
+                <br>
+                <br>
+                Code:
+                <br>
+                import pandas as pd<br>
+                df = pd.read_clipboard() <br>
+                <br>
+            </ul>
+
+            <b>pd.read_csv()</b>
+            <ul>Descrição: Lê um arquivo CSV (Comma Separated Values) em um DataFrame do pandas.
+                <br>
+                <br>
+                Code<br>
+                import pandas as pd <br>
+                df = pd.read_csv('seu_arquivo.csv')<br>
+            </ul>
+
+            <b>pd.read_excel()</b>
+            <ul>Descrição: Lê um arquivo Excel em um DataFrame do pandas.
+                <br>
+                <br>
+                Code<br>
+                import pandas as pd <br>
+                df = pd.read_excel('seu_arquivo.xlsx')<br>
+            </ul>
+
+            <b>pd.read_feather()</b>
+            <ul>
+                Descrição: Lê um arquivo Feather em um DataFrame do pandas.
+                <br>
+                <br>
+                Code <br>
+                import pandas as pd <br>
+                df = pd.read_feather('seu_arquivo.feather') <br>
+            </ul>
+
+            <b>pd.read_fwf()</b>
+            <ul>
+                Descrição: Lê um arquivo de largura fixa (Fixed Width Format) em um DataFrame do pandas
+                <br>
+                <br>
+                Code<br>
+                import pandas as pd <br>
+                df = pd.read_fwf('seu_arquivo.txt')<br>
+            </ul>
+
+            <b>pd.read_gbq()</b>
+            <ul>
+                Descrição: Lê um conjunto de dados do Google BigQuery em um DataFrame do pandas.
+                <br>
+                <br>
+                Code <br>
+                import pandas as pd<br>
+                project_id = 'seu-projeto-id'<br>
+                sql = 'SELECT * FROM seu_dataset.sua_tabela'<br>
+                df = pd.read_gbq(sql, project_id=project_id)<br>
+            </ul>
+
+            <b>pd.read_hdf()</b>
+            <ul>
+                Descrição: Lê um arquivo HDF5 em um DataFrame do pandas.
+                <br>
+                <br>
+                Code<br>
+                import pandas as pd<br>
+                df = pd.read_hdf('seu_arquivo.h5', 'nome_do_grupo')<br>
+            </ul>
+
+            <b>pd.read_html()</b>
+            <ul>
+                Descrição: Lê tabelas de uma página da web em um DataFrame do pandas.
+                <br>
+                <br>
+                Code<br>
+                import pandas as pd <br>
+                url = 'https://exemplo.com/tabela.html' <br>
+                df_list = pd.read_html(url) <br>
+                df = df_list[0] # Assume que a tabela desejada é a primeira na página <br>
+            </ul>
+
+            <b>pd.read_json()</b>
+            <ul>
+                Descrição: Lê um arquivo JSON (JavaScript Object Notation) em um DataFrame do pandas.
+                <br>
+                <br>
+                Code <br>
+                import pandas as pd <br>
+                df = pd.read_json('seu_arquivo.json')<br>
+            </ul>
+
+            <b>pd.read_parquet()</b>
+            <ul>
+                Descrição: Lê um arquivo Parquet em um DataFrame do pandas.
+                <br>
+                <br>
+                Code <br>
+                import pandas as pd<br>
+                df = pd.read_parquet('seu_arquivo.parquet') <br>
+            </ul>
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Leitura">
+            <a name="Leitura"></a>
+
+            <h3>Realizando a leitura desses dados:</h3>
+            <p>
+                Você pode dentro do '(3)' ou '[0:4]' definir quantos você quer mostrar <br>
+                basicamente você filtra a quantidade.<br>
+                No '[]' se você coloca [2,2] irá aparecer o segundo da lista e a segunda coluna. <br>
+
+            <ul>
+
+
+                <b> dados.head()</b> <br>
+                Mostra apenas as 5 primeiras entradas(0 a 4)<br>
+
+                <br>
+                <br>
+                <b>
+                    dados.tail() </b>
+                <br>
+                Mostra apenas as 5 ultimas entradas(4 a 0)<br>
+
+                <br>
+                <br>
+
+                <b> dados.columns</b> <br>
+                Irá mostrar as colunas<br>
+                Nome | idade | Nacionalidade<br>
+
+                <br>
+                <br>
+
+                <b> dados.index</b><br>
+                Irá mostrar as linhas <br>
+                RangeIndex(start=0, stop=18207, step=1)<br>
+                Ele começa no 0, para no 18207, e tem incrementos de 1 em 1
+
+                <br>
+                <br>
+
+                <b>dados['Name']</b>
+                <br>
+                Puxa apenas dados da coluna name, e você pode puxar mais coisas também<br>
+                dados[['Name', 'Age']] apenas adicionando como uma lista.
+
+                <br>
+                <br>
+
+                <b>dados.iloc[1]</b>
+                <br>
+                Irá puxar apenas informações da primeira linha<br>
+                Podendo variar ate onde vai puxar <br>
+                dados.iloc[0:4] vai exibir informações do 0, 1, 2, 3<br>
+
+
+            </ul>
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Loc/Sorted">
+            <a name="Loc/Sorted"></a>
+
+            <h3>Utilizado a função Loc e Sorted</h3>
+            <p>
+                <b> Função loc:</b>
+
+            <ul>
+                A função loc é uma função do pandas utilizada para selecionar e acessar um grupo de
+                linhas e colunas por rótulos ou uma condição booleana. É especialmente útil para a
+                indexação baseada em rótulos.
+
+                <br>
+                <br>
+
+                import pandas as pd <br>
+                dados.loc[dados['Nationality'] == 'Brazil']
+
+                <br>
+                <br>
+
+                import pandas as pd <br>
+                dados.loc[dados['Age'] == 21] <br>
+            </ul>
+
+            <b>Função sorted:</b>
+            <br>
+            <ul>
+                A função sorted em Python é utilizada para ordenar iteráveis (listas, tuplas, etc.)
+                em ordem ascendente ou descendente.
+
+                <br>
+                <br>
+
+                dados.sort_values('Age') <br>
+                Vai colocar do menor para o maior <br>
+
+                <br>
+                <br>
+
+                dados.sort_values('Age', ascending = False) <br>
+                Vai colocar do maior para o menor<br>
+            </ul>
+            Ambas as funções são ferramentas poderosas em Python, sendo a 'loc' útil para seleção
+            de dados em DataFrames usando rótulos e condições, enquanto a 'sorted' é fundamental
+            para ordenar iteráveis. Lembre-se de que o uso específico dessas funções dependerá
+            do contexto do seu código e dos seus requisitos.
+            </p>
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Colunas">
+            <a name="Colunas"></a>
+
+            <h3>Colunas</h3>
+
+            <p>
+                <b>Adicionando Colunas:</b>
+            <ul>
+                Essa e a linha de codigo para criar uma coluna nova
+                <br>
+                dados['total']
+                <br>
+                <br>
+                Nova coluna com soma de Dados<br>
+                Ou seja a coluna Total e a soma de outras colunas sendo:<br>
+
+                Total = Acceleration + SprintSpeed + Agility + Reactions<br>
+
+                dados['Total'] = dados['Acceleration'] + dados['SprintSpeed'] + dados['Agility'] +
+                dados['Reactions']<br>
+                dados<br>
+
+            </ul>
+            </p>
+
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Exportação">
+            <a name="Exportação"></a>
+
+            <h3>Exportando Dados:</h3>
+            <p>
+                Quando for exportar dados com Python pode-se gerar em varios formatos sendo:
+            <ul>
+                <b>CSV (Comma Separated Values):</b>
+
+                <ul>dados.to_csv('file.csv', index=False)</ul>
+
+                <br>
+
+                <b>Excel:</b>
+                <ul>df.to_excel('file.xlsx', index=False)</ul>
+
+                <br>
+
+                <b>JSON (JavaScript Object Notation):</b>
+                <ul>df.to_json('file.json', orient='records')</ul>
+
+                <br>
+
+                <b>HTML:</b>
+                <ul>df.to_html('file.html', index=False)</ul>
+
+                <br>
+
+                <b>Parquet:</b>
+                <ul>df.to_parquet('file.parquet', index=False)</ul>
+
+                <br>
+
+                <b>HDF5 (Hierarchical Data Format version 5):</b>
+                <ul>df.to_hdf('file.h5', key='data', mode='w')</ul>
+
+                <br>
+
+                <b>Feather:</b>
+                <ul>df.to_feather('file.feather')</ul>
+
+                <br>
+
+                <b>Msgpack:</b>
+                <ul>df.to_msgpack('file.msg', compress='zlib')</ul>
+
+                <br>
+
+                <b>Stata:</b>
+                <ul>df.to_stata('file.dta', version=118)</ul>
+
+                <br>
+
+                <b>SQL (Structured Query Language):</b>
+                <ul>from sqlalchemy import create_engine<br>
+                    engine = create_engine('sqlite:///file.db')<br>
+                    df.to_sql('table_name', con=engine, index=False)</ul>
+
+            </ul>
+            </p>
+        </div>
+
+    </div>
+
+    <hr>
+    <br>
+
+    <div class="Links">
+        <a name="Links"></a>
+        <button>
+            <a href="/">
+                <img width="50" height="50" src="https://img.icons8.com/fluency/48/000000/home.png" alt="home" />
+                <br>
+                Inicio
+            </a>
+
+        </button>
+
+        <button>
+
+            <a href="./Base_Python">
+                <img width="50" height="50" src="https://img.icons8.com/3d-fluency/188/python.png" alt="Python" />
+                <br>
+                Python
+            </a>
+
+        </button>
+
+        <button>
+            <a href="./Machine_Learning">
+                <img width="50" height="50" src="https://img.icons8.com/color/96/artificial-intelligence.png"
+                    alt="Machine Learning" />
+                <br>
+                Machine Learning
+            </a>
+        </button>
+
+    </div>
+
+    <br>
+    <hr>
+
+</body>
+
+</html>

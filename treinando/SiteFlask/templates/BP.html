@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <title>Base do Python</title>
+</head>
+
+<body>
+
+    <div class="Menu">
+        <h1>Python</h1>
+        <button onclick="toggleList()">
+                <img width="25px" height="25px" src="{{ url_for('static', filename='img/icons8-python-unscreen.gif') }}" alt="Vira-Vira">
+
+        </button>
+
+        <ul id="minhaLista" class="hidden">
+
+            <li>
+                <button>
+                    <a href="#Inicio">Inicio</a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Tiposdedados"> Tipos de Dados </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#variaveis"> Variáveis</a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Modificaçãodedados"> Modificação de dados</a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Treinando"> Treinando </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Input"> Input </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Slice/Index"> Slice/Index </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Formated string"> Formated string </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Metodos para string"> Metodos para string </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Operações matemáticas"> Operações matemáticas </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Operadores de fluxo"> Operadores de fluxo </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Operadores Lógicos"> Operadores Lógicos </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Forloop"> For loop </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#while loop"> While Loop </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+                    <a href="#Operador Ternário"> Operador Ternário </a>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <a href="#Links"> Links </a>
+                </button>
+            </li>
+
+            <li>
+                <button>
+
+                    <a href="https://www.python.org/downloads/" target="_blank">Donwload do Python</a>
+                </button>
+
+
+                </button>
+            </li>
+
+        </ul>
+    </div>
+    <hr>
+    <br>
+
+    <div>
+        <h2>A Base do Python</h2>
+
+        <h3>
+            Python 3.12.0
+
+        </h3>
+
+        <div class="history">
+
+            <H4>Python:</H4>
+            <li>Lançada por Guido Van Rossum em 1991.</li>
+            <li>Uma das linguagens mais utilizadas no mundo.</li>
+            <li>Linguagem simples e prática.</li>
+            <li>Fonte livre e aberta.</li>
+            <li>Suportado pelo Windows, Linux, Macintosh, Solaris</li>
+            <li>Alto nível para várias aplicações: Desenvolvimento Web, Ciência de dados, Inteligência Artificial e
+                Computação
+                Gráfica.</li>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="IDE">
+
+            <h3>Ambiente de Desenvolvimento Integrado (IDE):</h3>
+            <li>Pycharm</li>
+            <li>Spyder </li>
+            <li>Atom IDE</li>
+            <li>Visual Studio Code</li>
+            <li>PyDev</li>
+            <li>Komodo Edit</li>
+            <li>Geany</li>
+            <li>Pyzo</li>
+
+            <br>
+
+            <h3>Ambiente de desenvolvimento interativo baseado na Web:</h3>
+
+            <li>Jupyter Notebook</li>
+            <li>Jupyter Lab
+                <ul>
+                    -Arquivos no desktop. <br>
+                    -Dependente da capacidade de processamento do computador.<br>
+                    -Necessita instalação.
+                </ul>
+            </li>
+
+            <br>
+
+            <h3>Anaconda (python):</h3>
+
+            <h4>Plataforma de distribuição para ciência de dados com python.</h4>
+
+
+
+            <h4>Simplifica o gerenciamento e implantação de pacotes.</h4>
+
+
+            <li>NumPy --> Computação matemática com Python.</li>
+
+            <li>Pandas --> Manipulação e análise de dados. Trabalha em conjunto com Numpy.</li>
+
+            <li>Scikit learn --> Aprendizado de máquina (machine learning) em python.</li>
+
+            <li>Matplotlib --> Criação de gráficos e visualização de dados em geral.</li>
+
+            <li>Seaborn --> Visualização de dados baseado no matplotlib.</li>
+
+            <li>Fornece --> interface de alto nível para desenhar graficos estatísticos atraentes e informativos.</li>
+
+            <li>plotly --> Criação de gráficos e visualização de dados de forma interativa, com interface de alto nível.
+            </li>
+
+            <li>TensorFlow --> Biblioteca de código aberto. Desenvolvido pela Google Brain Team para aprendizado de
+                máquina
+                e
+                pesquisa de redes neurais profundas.</li>
+
+            <li>Keras deep learning library --> biblioteca rede neural de código aberto. roda em cima do tensor
+                TensorFlow
+            </li>
+
+            <li>SciPy --> É uma biblioteca baseado em Python, de código aberto, para matemática, ciências e engenharia.
+            </li>
+
+        </div>
+
+        <hr>
+
+        <div class="Inicio">
+
+            <a name="Inicio"></a>
+
+            <h3>
+                Inicio do fim:
+            </h3>
+
+            <p>print("Hello world")
+
+            <ul>O codigo print e usado para tudo desde de imprimir variaveis até um hello world.</ul>
+
+            </p>
+
+            <p>Para adicionar um comentario em uma linha basta adicionar um "#" no começo do comentario e no final Ex:
+
+            <ul> #print("Hello world") / # first code</ul>
+
+            </p>
+
+            <p>Mas se for mais de uma linha utiliza-se (''') para iniciar e (''')para finalizar.</p>
+            <p>(Sempre é bom usar os comentarios para deixar o codigo mais legivel e para se localizar nele tambem.)</p>
+
+        </div>
+
+        <hr>
+
+        <div class="Tiposdedados">
+            <a name="Tiposdedados"></a>
+
+            <h3>
+                Tipos de dados
+            </h3>
+
+            <p>
+                Entender os tipos de dados no python e fundamental, pois você precisa explicar para ele o que é texto o
+                que é
+                numero é dentro de numero tem duas variacoes
+                se ele e inteiro ou se e fracao e valores verdadeiros ou falsos.
+
+            <ul>
+                texto=(string/str): quando se coloca aspas simples ('') ou aspas duplas ("") o python interpreta como
+                texto
+
+            </ul>
+
+            Numeros(number): Existe dois tipos de numeros os:
+
+            <ul>integer(inteiro) = {1,2,3,4...} ou qualquer numero que não tenha fracao o python entende como inteiro
+
+                <br>
+
+                float(fracao) = {3.5, 4.7, 5.8 ...}
+
+            </ul>
+
+            E tem o BOOLEAN type que e verdadeiro ou falso
+            para descobrir o tipos de dados no codigo você pode usar o
+            print(type("sua variavel"))
+
+            </p>
+
+        </div>
+
+        <hr>
+
+        <div class="Variaveis">
+            <a name="variaveis"></a>
+            <h3>
+                Variáveis
+            </h3>
+
+            <p>
+
+                Variaveis são containers usado para amarzenar dados podendo ser number, integer, float, string/str, ou
+                BOOLEAN.<br>
+                Você pode declarar variaveis no python dando um nome a elas tipo x = 2 depois no seu codigo você coloca
+                essa
+                variavel onde você precisar no codigo seria assim;
+
+            <ul>
+                mustang = 2
+                viaLactea = 'hello world'
+            </ul>
+
+            Nisso você manda imprimir:
+            <ul>
+                print(mustang) = 2
+                print(viaLactea) = hello world
+            </ul>
+
+            </p>
+
+        </div>
+
+        <hr>
+
+        <div class="Modificaçãodedados">
+            <a name="Modificaçãodedados"></a>
+
+            <h3>Modificação de Dados</h3>
+
+            <p>
+
+            <ul>
+                mustang = str(2) <br>
+                viaLactea = int(5)<br>
+                ferrari = float(6)<br>
+
+
+                print(mustang) 2<br>
+                print(viaLactea) 5<br>
+                print(ferrari) 6.0 Nesse converteu de um numero inteiro para uma fracao ou float
+            </ul>
+
+            Somando as mesmas variaveis fica mais explícito
+
+            <ul>
+                mustang = str(2) <br>
+                viaLactea = int(5)<br>
+                ferrari = float(6)<br>
+
+
+                print(mustang + mustang ) 22 Nesse como se ele adicionasse outro texto 3 pois ele está como string/str
+                <br>
+                print(viaLactea + viaLactea) 10 Nesse uma soma normar 5 + 5 = 10
+                <br>
+                print(ferrari + ferrari) 12.0 Nesse a mesma soma so que fracionada 6.0 + 6.0 = 12.0
+            </ul>
+            </p>
+        </div>
+
+        <br>
+
+        <hr>
+        <br>
+
+
+        <div class="box">
+            <a name="Treinando"></a>
+            <h3>Treino</h3>
+            <h3>Criar uma frase adicionar variaveis e imprimir no final.</h3>
+            <p>
+            <ul>
+                local = 'oficina' <br>
+                peca = 'pistão' <br>
+                litros = str(6.2) <br>
+                ano = 1970 <br>
+                ano = str(ano) <br>
+                veiculo = 'camaro' <br>
+                cidade = 'São Paulo' <br>
+            </ul>
+            print('Na ' + local + ' não tinha o ' + peca + ' para o ' + veiculo, litros + ' de ' + ano + ' tive que
+            procurar em ' + cidade )
+
+            <br>
+
+            Resposta: <br>
+            Na oficina não tinha o pistão para o camaro 6.2 de 1970 tive que procurar em São Paulo
+
+            </p>
+
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Input">
+            <a name="Input"></a>
+
+            <h3>Input</h3>
+            <p>
+                O input e a interação do usuario com seu programa, você pega a informação do usuario
+                e utiliza ela dentro do seu codigo para aumentar a interação com usuario.
+
+            <ul>
+
+                nome = 'Andre' <br>
+                idade = 32 <br>
+                idade = str(idade) <br>
+                cidade = 'São Paulo' <br>
+                print('O ' + nome + ' tem ' + idade + ' anos de idade e mora em ' + cidade + '.' )
+            </ul>
+
+            Muda disso para isso:
+
+            <ul>
+                nome = input("Qual seu nome: ") <br>
+                idade = input('Qual sua idade: ')<br>
+                idade = str(idade)<br>
+                cidade = input ("Qual sua cidade: ")<br>
+                print('O ' + nome + ' tem ' + idade + ' anos de idade e mora em ' + cidade + '.' )
+            </ul>
+
+            O resultado será o que o usuario colocar!
+
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Slice/Index">
+            <a name="Slice/Index"></a>
+            <H3>Slice/Index</H3>
+            <p>
+
+                Slice: você vai utilizar o Slice para tirar a informação da string, integer, ou de um float
+                sem ter a informação completa.
+
+                <br>
+                <br>
+
+                index: a ordem numerica das letras ou seja PYTHON o P = 0, Y = 1, T = 2, H = 3, O = 4, N = 5.
+                Ele começa a contar do 0 para frente ou seja a primeira possição e a 0.
+
+            <ul>
+                fruta = 'Abacaxi'<br>
+                #index 0123456<br>
+                print(fruta[5])
+            </ul>
+
+            Nesse caso ele me retorna o "x"
+
+            <ul>
+                Se você quiser puxar da letra 2 ate a 4 <br>
+                fruta = 'Abacaxi'<br>
+                #index 0123456<br>
+                print(fruta[2:4])
+            </ul>
+            O problema que vai ficar sempre uma letra antes no final sendo "ac" o retorno sempre mostrando<br>
+            um antes do final se você quer a letra "a" tambem você coloca [2:5].
+            Pode pular um numero tambem colocando [2:7] aí fica acaxi.<br>
+            Se colocar valores negativos ele conta de trás para frente.
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Formated string">
+            <a name="Formated string"></a>
+
+            <h3>Formated string</h3>
+            <p>
+                Utilizando Formated string: Facilita a leitura da string e a inserção de variaveis dentro da string
+            <ul>
+                nome = 'Ghost' <br>
+                sobrenome = 'Of HUe' <br>
+                profissao = 'programador' <br>
+
+                texto = f' O {nome} {sobrenome} e um exelente {profissao}' <br> #texto formated string
+                texto2 = 'O ' + nome +' ' + sobrenome + ' e um exelente ' + profissao #texto normal
+                <br>
+                print(texto)<br>
+                print(texto2)
+            </ul>
+            </p>
+        </div>
+
+        <br>
+        <hr>
+
+
+        <div class="Metodos para string">
+            <a name="Metodos para string"></a>
+
+            <h3>Metodos para string</h3>
+            <p>
+                Metodos para string: Metodo para alterar texto, encontrar texto, ou modificar texto dentro de uma
+                string.
+
+                <br>
+
+                Dentro dos Metodos para string você pode decidir como vai salvar o tipo de dado podendo colocar
+                ele somente em letras maiúsculas ou minusculas sem pedir para o usuario.
+                Existem vários métodos disponíveis para manipulação de strings em Python.
+                Estão alguns dos métodos mais comuns:
+
+            <ul>
+
+                <b>1º</b> capitalize() <br>
+
+                Converte o primeiro caractere para maiúscula.<br>
+
+                string = "hello world"<br>
+                resultado = string.capitalize()<br>
+                # Resultado: "Hello world"
+
+                <br>
+                <br>
+
+                <b>2º</b> upper()<br>
+
+                Converte todos os caracteres para maiúscula.<br>
+
+                string = "hello world"<br>
+                resultado = string.upper()<br>
+                # Resultado: "HELLO WORLD"
+
+                <br>
+                <br>
+
+                <b>3º</b> lower()
+
+                Converte todos os caracteres para minúscula.<br>
+
+                string = "HELLO WORLD"<br>
+                resultado = string.lower()<br>
+                # Resultado: "hello world"
+
+                <br>
+                <br>
+
+                <b>4º</b> title()<br>
+
+                Converte o primeiro caractere de cada palavra para maiúscula.<br>
+
+                string = "hello world"<br>
+                resultado = string.title()<br>
+                # Resultado: "Hello World"
+
+                <br>
+                <br>
+
+                <b>5º</b> len() <br>
+
+                Retorna o comprimento da string (número de caracteres).<br>
+
+                string = "hello world"<br>
+                resultado = len(string)<br>
+                # Resultado: 11
+
+                <br>
+                <br>
+
+                <b>6º</b> count(substring)<br>
+
+                Conta o número de ocorrências de uma substring na string.<br>
+
+                string = "hello world"<br>
+                resultado = string.count("l")<br>
+                # Resultado: 3
+
+                <br>
+                <br>
+
+                <b>7º</b> find(substring) <br>
+                Retorna o índice da primeira ocorrência de uma substring. Retorna -1 se a substring não for encontrada.
+                <br>
+                string = "hello world"<br>
+                resultado = string.find("lo")<br>
+                # Resultado: 3
+
+                <br>
+                <br>
+
+                <b>8º</b> replace(old, new)<br>
+
+                Substitui todas as ocorrências de uma substring por outra.<br>
+
+                string = "hello world"<br>
+                resultado = string.replace("hello", "hi")<br>
+                # Resultado: "hi world"
+
+                <br>
+                <br>
+
+                <b>9º</b> startswith(prefix) e endswith(suffix)<br>
+
+                Verifica se a string começa ou termina com a substring fornecida, respectivamente.<br>
+
+                string = "hello world"<br>
+                resultado_start = string.startswith("hello")<br>
+                # Resultado_start: True<br>
+                resultado_end = string.endswith("world")<br>
+                # Resultado_end: True
+
+                <br>
+                <br>
+
+                <b>10º</b> strip()<br>
+
+                Remove espaços em branco no início e no final da string.<br>
+
+                string = " hello world "<br>
+                resultado = string.strip()<br>
+                # Resultado: "hello world"<br>
+
+            </ul>
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Operações matemáticas">
+            <a name="Operações matemáticas"></a>
+
+            <h3>Operações matemáticas</h3>
+            <p>
+                Operações matemática em python e a mesma coisa que na escola * /
+                Mutiplicação e divisão vem sempre antes da adição e subtração + -
+                Se estiver dentro de parenteses tem uma preferencia ()
+                Valores exponenciais ** (2³)
+                então a ordem e (2+2) --> 5**6 --> 5 * 9 ou 9 / 2 --> 5+5 ou 5-5
+
+                <br>
+                <br>
+
+                Operadores de comparação: pode ser usado em numero palavras mas se for
+                Python == python e false pois tem diferença entre maiúscula e minusculas
+
+            <ul>
+                == igual <br>
+                != não igual <br>
+                > maior que <br>
+                < menor que <br>
+                    >= maior ou igual <br>
+                    <= menor ou igual <br>
+                        <br>
+                        operador1 = 10 == 10 <br>
+                        operador2 = 20 != 20 <br>
+                        operador3 = 30 > 20 <br>
+                        operador4 = 40 < 50 <br>
+                            operador5 = 50 >= 40 <br>
+                            operador6 = 60 <= 70 <br>
+            </ul>
+            print(operador1, operador2, operador3, operador4, operador5, operador6) <br>
+            resultado:True False True True True True <br>
+
+            Operadores de Atribuição: <br>
+            Uma forma de realizar codigos matematicos com codigos mais simples
+
+            <ul>
+                x = 10 <br>
+                #x = x + 5<br>
+                #x += 5<br>
+                #x -= 5<br>
+                #x *= 5<br>
+                #x /= 5<br>
+                #x **=5<br>
+                x %= 3<br>
+            </ul>
+            print(x)
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Operadores de fluxo">
+            <a name="Operadores de fluxo"></a>
+
+            <h3>Operadores de fluxo</h3>
+
+            <p>
+                If, Else or Elif <br>
+                velocidade_via = 120<br>
+                sua_velocidade = int(input("Qual sua velocidade ?"))<br>
+
+            <ul>
+                if sua_velocidade > 120: <br>
+                print('A velocidade do radar é 120 reduza')
+            </ul>
+
+            <ul>
+                elif sua_velocidade < 110: <br>
+                    print("Sai da frente krl")
+            </ul>
+
+            <ul>
+                else: <br>
+                print('Está no limite')
+            </ul>
+
+            if (se), else (se não), elif (Vê se esta entre If e Else)
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Operadores Lógicos">
+            <a name="Operadores Lógicos"></a>
+
+            <h3>Operadores Lógicos</h3>
+
+            <p>
+                And ou or
+                <br>
+
+                são operadores lógicos que permitem combinar múltiplas condições em uma única expressão condicional.
+                Aqui está como eles funcionam:<br>
+
+            <ul>And: Retorna True se todas as condições forem verdadeiras. Se qualquer uma das condições for falsa,
+                retorna False.</ul>
+
+            <ul>Or: Retorna True se pelo menos uma das condições for verdadeira. Se todas as condições forem falsas,
+                retorna False.</ul>
+
+            <ul>
+                renda_acima_5mil = True <br>
+                nome_limpo = True<br><br>
+
+
+                if renda_acima_5mil and nome_limpo:<br>
+                print('Financiamento aprovado')<br><br>
+
+                else:<br>
+                print('Financiamento negado')<br><br>
+
+                resultado:Financiamento aprovado<br>
+
+
+
+                renda_acima_5mil = True<br>
+                nome_limpo = False<br>
+
+
+                if renda_acima_5mil or nome_limpo:<br>
+                print('Financiamento aprovado')<br><br>
+
+                else:<br>
+                print('Financiamento negado')<br><br>
+
+                resultado:Financiamento aprovado<br>
+
+            </ul>
+
+            <h4>Multiplos Operadores de Comparação:</h4>
+            Maneira mais simples de escrever um codigo
+
+            <ul>valor = 60
+
+                if 20 &lt;= valor &lt;40:
+                <br>
+                print('produto aceito')
+            </ul>
+
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="For loops">
+            <a name="Forloop"></a>
+            <h3>For Loops</h3>
+            <p>
+                Você pode utilizar em todas as partes do seu codigo quando você precisar de um loop/algo que fica
+                repetindo dentro de si mesmo
+                ou de uma variavel. Pode ser usado com números, string, If e Else, Nested loop, separando string.
+
+            <ul>
+                #for loop Numeros<br>
+                for infinity in range(0, 21, 5):<br>
+                print(infinity)<br>
+                '''range = quantidade de vezes que vai rodar dentro de si mesmo<br>
+                mas sempre lembrar que o python começa a contar do 0 então se você <br>
+                colocar 5 vai ser 0 1 2 3 4. <br>
+                tem o step que é (0, 21, 2)<br>
+                0 = onde começa 21 = onde acaba 2 = quantas casas pula
+                '''<br>
+            </ul>
+            <ul>
+                #for loop para string <br>
+                for sopa_de_letrinhas in 'Paparelepipedo':<br>
+                print(sopa_de_letrinhas)<br></ul>
+
+            Você pode associar sua palavra a uma variavel e em vez de escrever só coloca o nome da
+            variavel.
+
+            <ul>
+                palavra = Paparelepipedo<br>
+
+                for sopa_de_letrinhas in palavra:<br>
+                print(sopa_de_letrinhas)<br>
+
+                palavra = Paparelepipedo <br>
+
+                for sopa_de_letrinhas in palavra:<br>
+                print(sopa_de_letrinhas + 'Está dentro da palavra Paparelepipedo')<br>
+                <br>
+                Caso você queira adicionar um numero vai dar erro então você terá que criar modificações
+                <br>
+
+                print(f'{sopa_de_letrinhas} Está dentro da palavra {palavra}')<br>
+                Se voce coolocar as variaveis em vez da palavar depois só mudar a variavel.<br>
+            </ul>
+
+            <b>For loop com if e else</b>
+
+
+            <ul>
+                compra_confirmada = True <br>
+                dados_compra = 'compra no valor de 2.500'<br>
+
+
+                for enviar in range(3): <br>
+                if compra_confirmada:<br>
+                print(dados_compra)<br>
+                print('compra realizada')<br>
+                break<br>
+
+                else:<br>
+                compra_confirmada = False<br>
+                print("Falhou ou tá dando golpe?")<br>
+
+            </ul>
+
+            '''
+            No caso if e else você coloca o if dentro do for se ele for verdade ele
+            para de rodar e envia os dados
+            mas se for mentira ele pula para o else
+            '''
+            <br>
+            <br>
+
+            <b>Nested Loops: E basicamente um loop dentro de outro loop</b>
+
+            <ul>
+                for loop nested <br>
+
+                # Outer loop = Loop de fora<br>
+                # Inner loop = Loop de dentro<br>
+
+                for number1 in range(5):<br>
+                print(number1) #loop normal que imprime de 0 á 4<br>
+                for number2 in range(5): #esse loop roda dentro do primeiro loop<br>
+                print(number2)<br>
+            </ul>
+            '''
+            <br>
+            com o loop de dentro ele e confuso mas da para entender pois fica assim: <br>
+            0 Esse 0 e do primeiro loop (Esse e o primeiro loop do Number1)<br>
+            0 Esse e 0 e do segundo loop (Esse e o primeiro loop do Number2)<br>
+            1 Esse e 1 e do segundo loop (Esse e o segundo loop do Number2)<br>
+            2 Esse e 2 e do segundo loop (Esse e o terceiro loop do Number2)<br>
+            3 Esse e 3 e do segundo loop (Esse e o quarto loop do Number2)<br>
+            4 Esse e 4 e do segundo loop (Esse e o quinto loop do Number2)<br>
+            1 Esse e 1 e do primeiro loop (Esse e o segundo loop do Number1)<br>
+            Assim em diante
+            <br>
+            '''
+            <br>
+
+            Pode fazer assim tambem <br>
+
+            for number1 in range(1, 6):<br>
+            print('produto ' + str(number1)) #loop normal que imprime de 0 á 4<br>
+            for number2 in range(5): #esse loop roda dentro do primeiro loop<br>
+            print(number1, number2)<br>
+            <br>
+
+            <b>For Loop Separando String</b><br>
+
+            Vai ser utilizado o Nested loop <br>
+
+            Modificar dojão americano para d o j ã o a m e r i c a n o <br>
+
+            palavra = 'dojão americano'<br>
+
+            for need in palavra:<br>
+            print(f' {need}', end='')# se o espaço em end='' for vazio e vai voltar sem descer uma linha <br>
+
+            quando escreve print(f'') o e a string formatada<br>
+
+            </p>
+
+
+
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="while loop">
+            <a name="while loop"></a>
+
+            <h3>While Loop</h3>
+
+            <p>
+                Ele e um pouco diferente do for loop <br>
+                Loop dependente de uma condição ou seja tu vai vender um item você pagou 20 e vende a 200
+                mas vai fazer uma promoção que a cada dia abaixa 5 no valor mas não pode vender abaixo de 20.
+
+            <ul>
+                valor = 200 <br>
+                dia = 0<br>
+
+
+                while valor > 20:<br>
+                dia += 1<br>
+                print (f' No dia {dia} o produto vai ser vendido por R${valor}')<br>
+                valor -= 5<br>
+
+                Resultado:No dia 36 o produto vai ser vendido por R$25<br>
+
+            </ul><br>
+            Quando tem uma condição ele e uma exelente alternativa.<br>
+            Python While Loop é usado para executar um bloco de instruções
+            repetidamente até que uma determinada condição seja satisfeita.
+            E quando a condição se torna falsa, a linha imediatamente após o loop no programa é
+            executada. O loop while cai na categoria de iteração indefinida . Iteração indefinida
+            significa que o número de vezes que o loop é executado não é especificado explicitamente
+            com antecedência.
+
+            <br>
+            <br>
+            <br>
+
+            As instruções representam todas as instruções recuadas pelo
+            mesmo número de espaços de caracteres depois que uma construção de programação
+            é considerada parte de um único bloco de código. Python usa endentação como seu método
+            de agrupamento de declarações. Quando um loop while é executado, expr é avaliado primeiro
+            em um contexto booleano e, se for verdadeiro, o corpo do loop é executado. Em seguida, a
+            expr é verificada novamente, se ainda for verdadeira, o corpo é executado novamente e
+            continua até que a expressão se torne falsa.
+
+            <br><br>
+
+            <b>Diferenças Entre ForLoop e While Loop e If Else</b>
+            <br>
+            <br>
+            If e Else: sempre executa UMA vez e quando e VERDADEIRO(TRUE) e não roda novamente.<br>
+            (VERDADEIRO ou Falso)<br>
+
+            For Loop: você tem que falar para essa variavel roda tantas vezes.<br>
+            (Ele vai ser utilizado quando você não sabe o tamanho do seu loop.)<br>
+
+            While Loop: para esse variavel se for isso ou aquilo gire X vezes.<br>
+            (Esse e usado quando você sabe o tamanho do loop)<br>
+
+            </p>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div class="Operador Ternário">
+            <a name="Operador Ternário"></a>
+
+            <h3>Operador Ternário</h3>
+
+            <p>
+                Uma forma de economizar uma quantidade significativa de linhas no seu codigo
+            <ul>
+
+                Sai disso <br><br>
+
+                '''<br>
+                idade = int(input('Qual sua idade ?'))<br>
+
+                if idade >= 16:<br>
+                print('Pode votar!')<br>
+                elif idade <= 15:<br>
+                    print('Não pode votar')<br>
+                    '''<br><br>
+
+                    para:<br>
+                    idade = int(input('Qual sua idade ?'))<br>
+                    resultado = 'Pode votar!' if idade >= 16 else 'Não pode votar'<br>
+
+                    print(resultado)<br>
+            </ul>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <br>
+    <hr>
+
+
+    <div class="Links">
+        <a name="Links"></a>
+        <br>
+        <button>
+            <a href="/">
+                <img width="50" height="50" src="https://img.icons8.com/fluency/48/000000/home.png" alt="home" />
+                <br>
+                Inicio
+            </a>
+        </button>
+
+        <button>
+            <a href="./Data_Science">
+                <img width="50" height="50"
+                    src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-data-science-media-agency-flaticons-lineal-color-flat-icons-2.png"
+                    alt="external-data-science-media-agency-flaticons-lineal-color-flat-icons-2" />
+                <br>
+                Data Science
+            </a>
+        </button>
+
+        <button>
+            <a href="./Machine_Learning">
+                <img width="50" height="50" src="https://img.icons8.com/color/96/artificial-intelligence.png"
+                    alt="Machine Learning" />
+                <br>
+                Machine Learning
+            </a>
+
+    </div>
+    <br>
+    <hr>
+
+
+
+</body>
+
+</html>
