@@ -16,6 +16,7 @@ class MedidorRPM:
 # Instanciar o objeto MedidorRPM
 medidor_rpm = MedidorRPM()
 
+
 try:
     while True:
         # Simulação: medir RPM
