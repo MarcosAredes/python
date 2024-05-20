@@ -1,0 +1,605 @@
+O machine learning (ML) é o subconjunto da inteligência artificial (IA) 
+que se concentra na construção de sistemas que aprendem, ou melhoram o 
+desempenho, com base nos dados que consomem.
+
+
+------INTRODUÇÃO-------
+
+Termologia: 
+    -> pode haver varias definições diferentes na internet pois e uma termologia
+
+    Inteligência Artificial (IA):
+    A Inteligência Artificial é o campo da ciência da computação que se 
+    concentra na criação de sistemas capazes de realizar tarefas que 
+    normalmente requerem inteligência humana. Isso inclui aprendizado, 
+    raciocínio, resolução de problemas, percepção e uso da linguagem.
+
+    Sistemas Especialistas:
+    Sistemas Especialistas são programas de computador que imitam a 
+    tomada de decisão de um especialista humano em uma área específica. 
+    Eles utilizam uma base de conhecimento e um conjunto de regras para 
+    resolver problemas complexos de maneira semelhante a um especialista 
+    humano.
+
+    Visão Computacional:
+    Visão Computacional é um campo da IA que permite aos computadores 
+    interpretar e processar informações visuais do mundo real. Utiliza 
+    técnicas de processamento de imagem e reconhecimento de padrões para 
+    analisar e entender o conteúdo de imagens e vídeos.
+
+    Machine Learning (Aprendizado de Máquina):
+    Machine Learning é uma subárea da IA que envolve a criação de 
+    algoritmos e modelos estatísticos que permitem aos computadores 
+    aprender a partir de dados e melhorar seu desempenho em tarefas 
+    específicas sem serem explicitamente programados para cada uma delas.
+
+    Processamento de Linguagem Natural (PLN):
+    Processamento de Linguagem Natural é a área da IA que se dedica à 
+    interação entre computadores e linguagem humana. O objetivo é permitir 
+    que os computadores compreendam, interpretem e gerem linguagem humana de 
+    uma maneira significativa.
+
+    Algoritmos Genéticos:
+    Algoritmos Genéticos são técnicas de otimização inspiradas na evolução 
+    natural. Eles utilizam processos como seleção, cruzamento e mutação para 
+    gerar soluções novas e melhores para problemas complexos, simulando o processo evolutivo.
+
+    Mineração de Dados:
+    Mineração de Dados é o processo de explorar grandes conjuntos de dados 
+    para descobrir padrões ocultos, correlações e tendências. Utiliza técnicas 
+    de estatística, aprendizado de máquina e inteligência artificial para extrair 
+    informações valiosas dos dados.
+
+    Resolução de Problemas por Meio de Busca:
+    Esta técnica envolve encontrar soluções para problemas complexos através da 
+    exploração de possíveis estados ou configurações. Métodos comuns incluem algoritmos 
+    de busca como busca em profundidade, busca em largura e busca A*.
+
+    Lógica Fuzzy (Nebulosa):
+    Lógica Fuzzy é uma forma de lógica que lida com valores de verdade intermediários
+    entre o completamente verdadeiro e o completamente falso. Utiliza conceitos 
+    de graus de verdade para modelar incertezas e imprecisões, o que é útil em sistemas 
+    de controle e tomada de decisão.
+
+    Raciocínio Baseado em Casos:
+    Raciocínio Baseado em Casos é uma metodologia de resolução de problemas que utiliza 
+    experiências passadas para resolver novos problemas. Sistemas que utilizam esse método 
+    armazenam casos antigos e aplicam soluções de casos semelhantes aos novos problemas.
+
+    Redes Neurais
+    Redes Neurais são modelos computacionais inspirados na estrutura e funcionamento do cérebro humano. 
+    Consistem em unidades interconectadas chamadas neurônios, que processam informações em camadas e são 
+    utilizadas para tarefas como reconhecimento de padrões e classificação.
+
+    Robótica
+    Robótica é a área que envolve o design, construção, operação e uso de robôs. Utiliza diversas disciplinas da 
+    engenharia e da ciência da computação, incluindo IA, para desenvolver máquinas que podem realizar tarefas físicas e 
+    intelectuais de maneira autônoma ou semiautônoma.
+
+    Inteligência Computacional
+    Inteligência Computacional é um subcampo da inteligência artificial que engloba técnicas de computação inspiradas em processos naturais, 
+    como redes neurais, algoritmos genéticos e sistemas fuzzy, para resolver problemas complexos de forma eficiente.
+
+Métodos Preditivos:
+    Classificação:
+        Classificação é o processo de prever a categoria ou classe de 
+        uma dada observação. Os métodos de classificação são utilizados 
+        quando a variável de saída é categórica.
+
+        Algoritmos Comuns de Classificação:
+    
+        1°  Regressão Logística:
+           
+           - Descrição: Utiliza uma função logística para modelar a 
+             probabilidade de uma variável dependente binária.
+           
+           - Aplicação: Diagnóstico médico (ex: prever se um paciente 
+             tem uma doença), filtragem de spam.
+        
+        2°  Árvores de Decisão:
+            
+            - Descrição: Modelo em forma de árvore que toma decisões 
+            baseadas em regras derivadas dos dados.
+
+            - Aplicação: Diagnóstico de doenças, classificação de 
+            clientes.
+        
+        3°  Random Forest:
+
+            - Descrição: Conjunto de múltiplas árvores de decisão que 
+              trabalham em conjunto para melhorar a precisão da previsão.
+            
+            - Aplicação: Previsão de churn de clientes, classificação de documentos.
+
+        4°  Support Vector Machines (SVM):
+
+            - Descrição: Algoritmo que encontra o hiperplano que melhor
+              separa as diferentes classes nos dados.
+
+            - Aplicação: Reconhecimento de dígitos manuscritos, 
+              detecção de fraudes.
+        
+        5°  K-Nearest Neighbors (KNN):
+
+            - Descrição: Classifica uma observação com base na maioria 
+            das classes dos seus vizinhos mais próximos.
+
+            - Aplicação: Classificação de imagens, recomendação de produtos.
+
+        6°  Naive Bayes:
+
+            - Descrição: Baseado no Teorema de Bayes, assume 
+              independência entre as características.
+
+            - Aplicação: Análise de sentimentos, classificação de textos.
+
+        7°  Redes Neurais (Neural Networks):
+            
+            - Descrição: Modelos computacionais compostos por camadas 
+              de neurônios que aprendem padrões complexos nos dados.
+
+            - Aplicação: Reconhecimento de fala e imagem, diagnóstico médico.
+
+    Regressão:
+        Regressão é o processo de prever um valor numérico contínuo. 
+        Os métodos de regressão são utilizados quando a variável de 
+        saída é contínua.
+
+        Algoritmos Comuns de Regressão
+
+        1°  Regressão Linear
+
+            - Descrição: Modelo linear que relaciona a variável dependente com uma ou mais variáveis independentes.
+            - Aplicação: Previsão de preços imobiliários, previsão de vendas.
+
+        2°  Regressão Polinomial
+
+            - Descrição: Extensão da regressão linear que permite 
+              modelar relações não-lineares.
+
+            - Aplicação: Modelagem de crescimento populacional,
+              previsão de desempenho esportivo.
+
+        3°  Support Vector Regression (SVR)
+
+            - Descrição: Extensão do SVM para problemas de regressão, 
+            buscando encontrar um hiperplano que mantém a maioria dos 
+            dados dentro de uma margem de tolerância.
+
+            - Aplicação: Previsão de preços de ações, previsão de demanda.
+
+        4°  Árvores de Decisão para Regressão
+
+            - Descrição: Árvore de decisão adaptada para prever valores contínuos.
+           
+            - Aplicação: Previsão de consumo de energia, avaliação de risco de crédito.
+
+
+        5°  Random Forest Regressor
+
+            - Descrição: Conjunto de árvores de decisão para regressão,
+              combinando as previsões de várias árvores para melhorar a
+              precisão.
+            - Aplicação: Previsão de rendimentos agrícolas, previsão de
+              preços de commodities.
+        
+        6° Gradient Boosting Machines (GBM)
+
+            - Descrição: Combina múltiplos modelos de regressão simples
+              para criar um modelo mais robusto e preciso.
+            - Aplicação: Previsão de valores de imóveis, classificação 
+              de risco financeiro.
+
+        7° Redes Neurais para Regressão
+
+            - Descrição: Utiliza a arquitetura de redes neurais para 
+              modelar e prever valores contínuos.
+
+            - Aplicação: Previsão de séries temporais, modelagem de sistemas complexos. 
+
+
+     Escolha do Algoritmo
+        A escolha entre classificação e regressão depende do 
+        tipo de problema e dos dados disponíveis:
+
+        Classificação: Quando a saída é uma categoria ou classe.
+        Regressão: Quando a saída é um valor contínuo. 
+
+        Cada método tem suas próprias vantagens e limitações. 
+        A escolha do algoritmo pode depender de fatores como a 
+        quantidade e a natureza dos dados, a necessidade de 
+        interpretabilidade, a precisão desejada e os recursos 
+        computacionais disponíveis. Testar vários algoritmos e 
+        utilizar técnicas como validação cruzada pode ajudar a 
+        determinar a melhor abordagem para um problema específico.
+
+Métodos Descritivos:
+    
+    Os métodos descritivos em Data Mining são utilizados para identificar 
+    padrões e descrever as características dos dados sem realizar previsões 
+    explícitas. Esses métodos ajudam a entender melhor a estrutura dos dados, 
+    identificar relações importantes e resumir informações complexas. 
+    
+    Associação
+        
+        A análise de associação é usada para encontrar relações entre 
+        variáveis em grandes conjuntos de dados. Ela identifica regras ou 
+        padrões frequentes que ocorrem juntos.
+
+        Algoritmos Comuns de Associação:
+
+        1°  Apriori
+
+            - Descrição: Algoritmo que identifica conjuntos 
+              frequentes de itens em bases de dados transacionais e 
+              gera regras de associação.
+
+            - Aplicação: Análise de cestas de compras 
+              (market basket analysis), recomendação de produtos.
+        
+        2°  Eclat
+
+            - Descrição: Utiliza uma abordagem baseada em interseção 
+              de conjuntos para encontrar itens frequentes.
+
+            - Aplicação: Descoberta de padrões de compras, análise de 
+              redes sociais.
+
+        3°  FP-Growth (Frequent Pattern Growth)
+
+            - Descrição: Constrói uma árvore de padrões frequentes 
+             (FP-tree) para encontrar conjuntos de itens frequentes 
+             sem gerar candidatas explicitamente.
+            
+            - Aplicação: Regras de associação em grandes bases de 
+              dados, segmentação de clientes.
+        
+   Agrupamento
+        
+        O agrupamento (clustering) é a tarefa de dividir um conjunto 
+        de dados em grupos (ou clusters) de modo que os itens dentro 
+        de um mesmo grupo sejam mais semelhantes entre si do que em 
+        relação aos itens de outros grupos.
+
+        Algoritmos Comuns de Agrupamento 
+
+        1°  K-means
+
+            - Descrição: Divide os dados em k clusters, onde cada 
+            ponto pertence ao cluster com o centroide mais próximo.
+           
+            - Aplicação: Segmentação de mercado, agrupamento de 
+            imagens.  
+
+        2°  Hierarchical Clustering
+
+            Descrição: Cria uma árvore de clusters (dendrograma) 
+            que pode ser cortada em diferentes níveis para obter 
+            diferentes números de clusters.
+
+            Aplicação: Análise de taxonomia, agrupamento de genes.
+        
+        3°  DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+
+            - Descrição: Agrupa pontos que estão densamente conectados, 
+              identificando e ignorando ruído.
+
+            - Aplicação: Detecção de outliers, análise de dados espaciais.
+
+        4° Mean Shift
+            
+            - Descrição: Agrupa pontos deslocando iterativamente 
+              os pontos em direção à densidade máxima local.
+
+            - Aplicação: Rastreamento de objetos em vídeos,
+              segmentação de imagens
+    
+    Detecção de Desvios (Outlier Detection)
+        
+        A detecção de desvios ou outliers é o processo de identificar 
+        observações que se desviam significativamente dos outros dados.
+
+        Algoritmos Comuns de Detecção de Desvios
+
+        1° LOF (Local Outlier Factor)
+
+            Descrição: Mede o grau de anomalia de um ponto com 
+            base na densidade local dos vizinhos.
+
+            Aplicação: Detecção de fraudes, monitoramento de redes.
+        
+        2° Isolation Forest
+
+            - Descrição: Baseado na criação de árvores de decisão 
+              aleatórias, isolando outliers mais rapidamente.
+
+            - Aplicação: Detecção de anomalias em dados de séries 
+              temporais, prevenção de fraudes.
+        
+        3° One-Class SVM
+
+            Descrição: Algoritmo de SVM adaptado para detecção de 
+            outliers ao aprender a separar a maioria dos dados de 
+            outliers em um espaço de alta dimensão.
+
+            Aplicação: Detecção de intrusões, controle de qualidade.
+
+    Padrões Sequenciais
+       
+        A análise de padrões sequenciais é utilizada para descobrir 
+        relações sequenciais entre eventos em dados temporais ou 
+        transacionais.
+
+        Algoritmos Comuns de Padrões Sequenciais
+
+        1° AprioriAll
+
+            - Descrição: Extensão do algoritmo Apriori para encontrar 
+              padrões sequenciais.
+            
+            -Aplicação: Análise de comportamento de clientes, 
+             sequências de DNA.
+        
+        2° PrefixSpan (Prefix-projected Sequential pattern mining)
+
+            - Descrição: Utiliza projeções de prefixos para encontrar 
+              padrões sequenciais sem gerar conjuntos de candidatos.
+            
+            - Aplicação: Análise de log de navegação na web, transações financeiras.
+
+        3° SPADE (Sequential Pattern Discovery using Equivalence classes)
+
+            - Descrição: Divide o problema de mineração de padrões 
+              sequenciais em subproblemas menores usando classes de 
+              equivalência.
+
+            - Aplicação: Descoberta de padrões de eventos em logs 
+              de sistemas, análise de transações.    
+        
+    Sumarização
+        
+        A sumarização envolve a criação de uma representação compacta 
+        e informativa dos dados, fornecendo uma visão geral e 
+        insights importantes.
+
+        Técnicas Comuns de Sumarização
+
+        1° Análise de Componentes Principais (PCA)
+
+            - Descrição: Técnica de redução de dimensionalidade que 
+              transforma os dados para um novo espaço de menor dimensão.
+           
+            - Aplicação: Visualização de dados, compressão de dados.  
+
+        2° Cluster Analysis para Sumarização
+
+            - Descrição: Utiliza agrupamento para resumir dados 
+              identificando grupos representativos.
+
+            - Aplicação: Segmentação de clientes, agrupamento de 
+              documentos.
+        
+        3° Resumo Estatístico
+
+            - Descrição: Utiliza medidas estatísticas 
+              (média, mediana, variância) para descrever os dados.
+            - Aplicação: Análise exploratória de dados, relatórios 
+              de desempenho.
+        
+    Os métodos descritivos são essenciais para entender a estrutura e 
+    os padrões subjacentes nos dados, facilitando a tomada de decisões
+    informadas e a identificação de áreas de interesse para análises 
+    mais detalhadas. A escolha do método adequado depende dos objetivos 
+    da análise e das características específicas dos dados disponíveis.    
+
+Tipos de Aprendizagem de Máquina:
+    
+    A Aprendizagem de Máquina (Machine Learning) é um subcampo da 
+    Inteligência Artificial que se concentra no desenvolvimento de 
+    algoritmos e técnicas que permitem aos computadores aprenderem a 
+    partir de dados. Em vez de serem explicitamente programados para 
+    realizar uma tarefa, os sistemas de aprendizado de máquina 
+    identificam padrões nos dados e fazem previsões ou decisões com 
+    base nesses padrões.
+
+    
+    Supervisionada:
+        
+        A aprendizagem supervisionada é um tipo de aprendizado de máquina 
+        onde o modelo é treinado utilizando um conjunto de dados rotulados. 
+        O objetivo é fazer previsões ou inferências precisas sobre novos 
+        dados baseados nos padrões aprendidos a partir dos dados de 
+        treinamento.
+
+        Métodos Supervisionados
+            
+            1° Classificação:
+
+            Descrição: A tarefa de classificação envolve prever a 
+            categoria ou classe de uma dada observação. A saída é um 
+            valor categórico.
+
+            Exemplos de Algoritmos:
+
+            - Regressão Logística
+            - Árvores de Decisão
+            - Random Forest
+            - Support Vector Machines (SVM)
+            - K-Nearest Neighbors (KNN)
+            - Naive Bayes
+            - Redes Neurais
+
+            2° Regressão:
+
+                Descrição: A tarefa de regressão envolve prever um valor 
+                contínuo. A saída é um valor numérico.
+
+                Exemplos de Algoritmos:
+
+                - Regressão Linear
+                - Regressão Polinomial
+                - Support Vector Regression (SVR)
+                - Árvores de Decisão para Regressão
+                - Random Forest Regressor
+                - Gradient Boosting Machines (GBM)
+                - Redes Neurais para Regressão
+    
+    
+    Aprendizagem Não Supervisionada:
+
+        A aprendizagem não supervisionada é um tipo de aprendizado de máquina onde o 
+        modelo é treinado usando dados não rotulados. O objetivo é explorar a estrutura 
+        subjacente dos dados e identificar padrões ou agrupamentos sem supervisão externa.
+
+        Métodos Não Supervisionados
+        
+        1° Agrupamento (Clustering)
+        
+            Descrição: Agrupar dados em clusters ou grupos onde os itens 
+            dentro de cada grupo são mais semelhantes entre si do que com 
+            itens de outros grupos.
+            
+            Exemplos de Algoritmos:
+            
+            - K-means
+            - Hierarchical Clustering
+            - DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+            - Mean Shift
+
+        2° Associação:
+
+            Descrição: Encontrar regras de associação ou padrões 
+            frequentes que descrevem como as variáveis nos dados estão 
+            relacionadas.
+
+            Exemplos de Algoritmos:
+
+            - Apriori
+            - Eclat
+            - FP-Growth (Frequent Pattern Growth)
+
+        3° Redução de Dimensionalidade:
+
+            Descrição: Reduzir o número de variáveis sob consideração, 
+            obtendo um conjunto de principais variáveis que retêm a maior 
+            parte da informação dos dados originais.
+
+            Exemplos de Algoritmos:
+            
+            - Análise de Componentes Principais (PCA)
+            - Análise de Componentes Independentes (ICA)
+            - t-Distributed Stochastic Neighbor Embedding (t-SNE)
+    
+    Aprendizagem Semissupervisionada: 
+        
+        A aprendizagem semissupervisionada combina aspectos de 
+        aprendizagem supervisionada e não supervisionada. Utiliza um 
+        pequeno conjunto de dados rotulados junto com um grande 
+        conjunto de dados não rotulados para melhorar a precisão do 
+        modelo.
+
+        Métodos Semissupervisionados
+            
+            Autoencoders
+                
+                Descrição: Redes neurais que aprendem a codificar os 
+                dados de entrada em uma forma compacta e depois 
+                decodificá-los, útil para aprendizado de 
+                características em dados rotulados e não rotulados.
+                
+                Aplicação: Deteção de anomalias, compressão de dados.
+    
+    Aprendizagem por Reforço
+
+        A aprendizagem por reforço é um tipo de aprendizado de 
+        máquina onde um agente aprende a tomar ações em um ambiente 
+        para maximizar uma recompensa cumulativa.
+
+        Métodos de Aprendizagem por Reforço
+
+            Q-Learning
+
+                Descrição: Algoritmo de aprendizado por reforço 
+                baseado em valores que busca aprender a política de 
+                ação que maximiza a recompensa total.
+
+                Aplicação: Jogos, controle de robôs.
+            
+            Deep Q-Networks (DQN)
+
+                Descrição: Combinação de Q-Learning com redes neurais 
+                profundas para lidar com estados de alta dimensão.
+
+                Aplicação: Jogos complexos, navegação autônoma.
+
+---------------------------
+
+-----CLASSIFICAÇÃO Pt1-------
+
+Tipos de Variáveis: 
+ 
+  Variáveis Numéricas:  
+    
+    As variáveis numéricas, também conhecidas como quantitativas, representam 
+    quantidades mensuráveis e são expressas como números. Elas podem ser subdivididas 
+    em dois tipos principais:
+
+    1° Variáveis Contínuas:
+
+        - Descrição: Podem assumir qualquer valor dentro de um intervalo contínuo. 
+          Elas são geralmente resultados de medições.
+        
+        - Exemplos: Altura, peso, temperatura, tempo.
+        
+        - Propriedades: Podem ter um número infinito de valores possíveis 
+          dentro de um intervalo específico.
+        
+        - Aplicações: Em regressão, análise de séries temporais, controle de qualidade.
+
+    2° Variáveis Discretas
+
+        - Descrição: Assumem valores contáveis e geralmente são 
+          resultados de contagens.
+        
+        - Exemplos: Número de filhos, quantidade de itens vendidos, 
+          número de chamadas recebidas.
+        
+        - Propriedades: Têm um número finito ou contável de valores possíveis.
+        
+        - Aplicações: Em contagem de eventos, modelos de distribuição de probabilidade como Poisson.
+
+  Variáveis Categóricas
+    
+    As variáveis categóricas, também conhecidas como qualitativas, representam 
+    categorias ou grupos distintos. Elas podem ser subdivididas em 
+    dois tipos principais:
+
+    1° Variáveis Nominais
+
+      - Descrição: Representam categorias sem uma ordem intrínseca. Os valores 
+      são nomes ou rótulos distintos que identificam diferentes categorias.
+      
+      - Exemplos: Gênero (masculino, feminino), cor dos olhos (azul, verde, marrom),
+        tipos de animais (cão, gato, pássaro).
+      
+      - Propriedades: Não possuem uma ordem natural ou hierarquia.
+      
+      -Aplicações: Em classificação, análise de frequências, visualização de dados 
+      como gráficos de barras.
+
+    2° Variáveis Ordinais
+
+      - Descrição: Representam categorias com uma ordem ou hierarquia. 
+        Embora os valores indiquem uma ordem, as diferenças entre valores 
+        adjacentes não são necessariamente uniformes ou mensuráveis.
+      
+      - Exemplos: Nível educacional (ensino fundamental, médio, superior), 
+        classificação de serviços (ruim, bom, excelente), faixas de renda 
+        (baixa, média, alta).
+      
+      - Propriedades: Possuem uma ordem natural, mas as diferenças entre 
+        os valores não são quantitativamente significativas.
+      
+      - Aplicações: Em análise de tendências, classificação ordinal, 
+        visualização de dados como gráficos de barras ordenados.
+    
