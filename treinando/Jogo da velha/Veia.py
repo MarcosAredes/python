@@ -42,7 +42,7 @@ class JogoDaVelha:
             if self.verificar_vitoria(self.jogador_atual):
                 messagebox.showinfo(
                     "Fim de Jogo",
-                    f"Jogador {self.jogador_atual} Ganhou Caralho!",
+                    f"Jogador {self.jogador_atual} Ganhou!",
                 )
                 self.reiniciar_jogo()
             elif self.tabuleiro_cheio():
